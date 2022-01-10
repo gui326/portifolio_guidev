@@ -1,0 +1,8 @@
+#teste_gui{
+    animation: mymove 1s infinite alternate;
+}
+
+@keyframes mymove {
+    from {top: -20px;}
+    to {top: 0px;}
+  }

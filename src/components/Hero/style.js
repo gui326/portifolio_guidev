@@ -40,8 +40,8 @@ export const Title = styled.h1`
 `;
 
 export const SpecialText = styled.h6`
-    margin-top: 25px;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     color: #80FFDB;
     font-size: 16px;
     letter-spacing: 5%;
@@ -49,7 +49,7 @@ export const SpecialText = styled.h6`
 `;
 
 export const Text = styled.p`
-    font-weight: 500;
+    font-weight: 400;
     width: 80%;
     font-size: 16px;
     color: #A7A7A7;

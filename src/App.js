@@ -1,13 +1,24 @@
 import './App.css';
+import {
+  BrowserRouter,
+  Routes,
+  Route
+} from "react-router-dom";
 import Header from './components/Header';
-import Hero from './components/Hero';
+import Home from './pages/Home';
+import NotFound from './pages/NotFound';
+import Projects from './pages/Projects';
 
 function App() {
   return (
-    <div className="App">
-      <Header/>
-      <Hero/>
-    </div>
+    <BrowserRouter>
+        <Header/>
+        <Routes>
+          <Route path="/" element={<Home />}/>
+          <Route path="/projects" element={<Projects />}/>
+          <Route path="*" element={<NotFound />}/>
+        </Routes>
+    </BrowserRouter>
   );
 }
 

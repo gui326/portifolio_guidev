@@ -16,7 +16,7 @@ export const HeaderLogo = styled.p`
     font-family: 'Kadwa';
     color: #80FFDB;
     font-size: 1.7rem;
-    letter-spacing: -4px;
+    letter-spacing: -3px;
     cursor: pointer;
 `;
 

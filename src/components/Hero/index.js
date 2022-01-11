@@ -11,7 +11,7 @@ export default function Hero(){
                 <SubTitle>Olá. Sou o</SubTitle>
                 <Title>Guilherme Batista da Silva</Title>
                 <SpecialText>Desenvolvedor Full-Stack</SpecialText>
-                <Text>Sou desenvolvedor, com conhecimento sólidos em php, html, css e javascript. E estou iniciando uma nova jornada com React.</Text>
+                <Text>Sou desenvolvedor com conhecimento sólido em php, html, css e javascript. Iniciando uma nova jornada com React.</Text>
             </LeftSide>
             <RightSide>
                 <Slide direction="left" timeout={500} in={true} mountOnEnter unmountOnExit>

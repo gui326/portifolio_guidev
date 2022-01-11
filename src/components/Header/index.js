@@ -1,21 +1,21 @@
 import { HeaderArea, HeaderLogoArea, HeaderLogo, HeaderItem, HeaderBar, HeaderMobile } from './style.js'; 
+import {Link} from 'react-router-dom'; 
 
 export default function Header(){
     return(
         <HeaderArea>
             <HeaderLogoArea>
-                <HeaderLogo>GuiDev</HeaderLogo>
+                <Link to="/">
+                    <HeaderLogo>GuiDev</HeaderLogo>
+                </Link>
             </HeaderLogoArea>
             <HeaderBar>
-                <HeaderItem>
-                    Home
-                </HeaderItem>
-                <HeaderItem>
-                    Journey
-                </HeaderItem>
-                <HeaderItem>
-                    Projects
-                </HeaderItem>
+                <Link to="/">
+                    <HeaderItem>Home</HeaderItem>
+                </Link>
+                <Link to="/projects">
+                    <HeaderItem>Projects</HeaderItem>
+                </Link>
                 <HeaderItem>
                     Contact
                 </HeaderItem>

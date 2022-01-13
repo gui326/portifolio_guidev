@@ -1,5 +1,6 @@
-import { Section, Heading, ProjectArea, ContentArea, Title, Text, LogoArea, Logo, LinkArea, Imagem, ImagemArea} from './styled';
+import { Section, Heading, ProjectArea, ContentArea, Title, Text, LogoArea, Logo, LinkArea, LinkA, Imagem, ImagemArea} from './styled';
 import Skeleton from '@mui/material/Skeleton';
+import { Grid } from '@mui/material';
 
 export default function Projects(){
     return(
@@ -8,28 +9,86 @@ export default function Projects(){
                 <img src="iconInsight.svg"/>
                 Projects
             </Heading>
-            <ProjectArea>
-                <ContentArea>
-                    <Title>NewFisco</Title>
-                    <Text>Sistema web para gerenciamento de notas fiscais e geração do arquivo Sintegra</Text>
-                    <LogoArea>
-                        <Skeleton variant="circular" width={40} height={40} />
-                        <Logo src="laravelLogo.png"/>
-                        <Logo src="phpLogo.png"/>
-                        <Logo src="htmlLogo.png"/>
-                        <Logo src="cssLogo.png"/>
-                    </LogoArea>
-                    <LinkArea>
-                        <a href="https://newfisco.vercel.app/" target="_blank">
-                            https://newfisco.vercel.app/
-                        </a>
-                    </LinkArea>
-                </ContentArea>
-                <ImagemArea>
-                    <Imagem src="project1.png"/>
-                </ImagemArea>
-            </ProjectArea>
-
+            <Grid container spacing={2}>
+                <Grid item md={12}>
+                    <ProjectArea>
+                        <ContentArea>
+                            <Title>NewFisco</Title>
+                            <Text>
+                                Sistema web para gerenciamento de notas fiscais e geração do arquivo Sintegra.
+                                <br/>
+                                O sistema faz a leitura do arquivo nota fiscal no formato xml e faz a geração do arquivo Sintegra apartir
+                                da coleta desses dados.
+                            </Text>
+                            <LogoArea>
+                                <Logo src="laravelLogo.png"/>
+                                <Logo src="phpLogo.png"/>
+                                <Logo src="htmlLogo.png"/>
+                                <Logo src="cssLogo.png"/>
+                            </LogoArea>
+                            <LinkArea>
+                                <LinkA href={'https://newfisco.vercel.app/'} target={'_blank'}>
+                                    https://newfisco.vercel.app/
+                                </LinkA>
+                            </LinkArea>
+                        </ContentArea>
+                        <ImagemArea>
+                            <a href="https://newfisco.vercel.app/" target="_blank">
+                                <Imagem src="project1.png"/>
+                            </a>
+                        </ImagemArea>
+                    </ProjectArea>
+                </Grid>
+            </Grid>
+            <Grid pt={1} container spacing={1}>
+                <Grid item md={4} xs={12}>
+                    <ProjectArea>
+                        <Title>Vida Cotação</Title>
+                        <Text>
+                            Multi formulário para cotação de um seguro de vida.
+                            <br/>
+                            Com todo o processo:
+                            <br/>
+                            Captação de Lead;
+                            <br/>
+                            Selecionamento do valor de cotação;
+                            <br/>
+                            Adição de complementos;
+                            <br/>
+                            Preenchimentos de dados pessoais;
+                            <br/>
+                            Seleção de beneficiários;
+                            <br/>
+                            Pagamento.
+                        </Text>
+                        <LogoArea>
+                            <Logo src="reactLogo.png"/>
+                        </LogoArea>
+                        <LinkArea>
+                            <LinkA href={'https://new-vida-cotacao-react.vercel.app/'} target={'_blank'}>
+                            https://new-vida-cotacao-react.vercel.app/
+                            </LinkA>
+                        </LinkArea>
+                    </ProjectArea>
+                </Grid>
+                <Grid item md={8} xs={12}>
+                    <ProjectArea>
+                        <Title>Teach Ana</Title>
+                        <Text>Sistema web para gerenciamento de notas fiscais e geração do arquivo Sintegra</Text>
+                        <LogoArea>
+                            <Logo src="laravelLogo.png"/>
+                            <Logo src="phpLogo.png"/>
+                            <Logo src="htmlLogo.png"/>
+                            <Logo src="cssLogo.png"/>
+                        </LogoArea>
+                        <LinkArea>
+                            <LinkA href={'https://newfisco.vercel.app/'} target={'_blank'}>
+                                https://newfisco.vercel.app/
+                            </LinkA>
+                        </LinkArea>
+                    </ProjectArea>
+                </Grid>
+            </Grid>
         </Section>
     );
 }

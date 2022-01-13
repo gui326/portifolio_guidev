@@ -13,7 +13,7 @@ function App() {
   return (
     <BrowserRouter>
         <Header/>
-        <p style={{borderRadius: '50px', padding: '7px 20px', background: 'grey', position: 'fixed', left: '45%', color: 'white'}}>Em desenvolvimento</p>
+        <p style={{zIndex: '100', borderRadius: '50px', padding: '7px 20px', background: 'grey', position: 'fixed', left: '45%', color: 'white'}}>Em desenvolvimento</p>
         <Routes>
           <Route path="/" element={<Home />}/>
           <Route path="/projects" element={<Projects />}/>

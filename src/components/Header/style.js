@@ -58,3 +58,39 @@ export const HeaderMobile = styled.div`
         display: block;
     }
 `;
+
+export const MenuMobile = styled.div`
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    background: black;
+    z-index: 1050;
+    text-align: center;
+`;
+
+export const MenuArea = styled.ul`
+    width: 100%;
+    padding-top: 6em;
+`;
+
+export const MenuItem = styled.li`
+    width: 100%;
+    font-size: 5em;
+`;
+
+export const MenuButton = styled.div`
+    width: 100%;
+    text-align: right;
+    position: relative;
+    top: 1em;
+    right: 1em;
+
+    svg{
+        font-size: 3em;
+    }
+
+`;

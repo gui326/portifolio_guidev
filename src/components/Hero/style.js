@@ -13,9 +13,9 @@ export const Section = styled.section`
     margin: auto;
 
     @media (max-width: 468px){
-        padding: 2% 1rem;
+        padding: 5% 1rem;
         overflow: hidden;
-        box-sizing: border-box;
+        position: relative;
     }
 `;
 
@@ -75,8 +75,10 @@ export const Imagem = styled.img`
 
     @media (max-width: 468px){
         position: absolute;
-        top: 10em;
-        left: 17em;
+        width: 100%;
+        top: 5em;
+        left: 16em;
         z-index: 0;
     }
 `;
+

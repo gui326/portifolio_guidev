@@ -8,7 +8,6 @@ export default function Header(){
     const [menu, setMenu] = useState(false);
 
     function handleMenu(){
-        console.log('teste');
         menu ? setMenu(false) : setMenu(true);
     }
 
@@ -45,10 +44,10 @@ export default function Header(){
                     </MenuButton>
                     <MenuArea>
                         <Link to="/">
-                            <MenuItem>Home</MenuItem>
+                            <MenuItem onClick={() => handleMenu()}>Home</MenuItem>
                         </Link>
                         <Link to="/projects">
-                            <MenuItem>Projects</MenuItem>
+                            <MenuItem onClick={() => handleMenu()}>Projects</MenuItem>
                         </Link>
                         <MenuItem>
                             Contact

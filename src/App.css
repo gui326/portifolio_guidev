@@ -37,3 +37,19 @@ p{
 .loaderOff{
   display: none!important;
 }
+
+#testeMessage{
+  z-index: 100; 
+  border-radius: 50px;
+  padding: 7px 20px;
+  background: grey;
+  position: fixed;
+  left: 45%;
+  color: white;
+}
+
+@media (max-width: 468px){
+  #testeMessage{
+      left: 15%;
+  }
+}

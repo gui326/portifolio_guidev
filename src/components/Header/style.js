@@ -6,6 +6,11 @@ export const HeaderArea = styled.header`
     padding: 1.5rem 4rem;
     max-width: 1240px;
     margin: auto;
+    box-sizing: border-box;
+
+    @media (max-width: 468px){
+        padding: 1.5rem 1rem;
+    }
 `;
 
 export const HeaderLogoArea = styled.div`
@@ -42,6 +47,12 @@ export const HeaderItem = styled.li`
 
 export const HeaderMobile = styled.div`
     display: none;
+    margin-left: auto;
+    align-self: center;
+
+    svg{
+        font-size: 35px;
+    }
 
     @media (max-width: 468px){
         display: block;

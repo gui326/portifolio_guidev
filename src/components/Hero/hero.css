@@ -6,3 +6,9 @@
     from {top: -20px;}
     to {top: 0px;}
   }
+
+  @media (max-width: 468px){
+      #teste_gui{
+          display: none;
+      }
+  }

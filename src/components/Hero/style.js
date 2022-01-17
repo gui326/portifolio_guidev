@@ -11,11 +11,21 @@ export const Section = styled.section`
     padding: 2% 10%;
     max-width: 1240px;
     margin: auto;
+
+    @media (max-width: 468px){
+        padding: 2% 1rem;
+        overflow: hidden;
+        box-sizing: border-box;
+    }
 `;
 
 export const LeftSide = styled.div`
     padding-top: 4%;
     width: 50%;
+
+    @media(max-width: 468px){
+        width: 95%;
+    }
 `;
 
 export const RightSide = styled.div`
@@ -23,6 +33,10 @@ export const RightSide = styled.div`
     display: flex;
     align-self: center;
     width: 50%;
+
+    @media (max-width: 468px){
+        width: 5%;
+    }
 `;
 
 export const SubTitle = styled.h6`
@@ -58,4 +72,11 @@ export const Text = styled.p`
 export const Imagem = styled.img`
     margin: auto;
     max-width: 82%;
+
+    @media (max-width: 468px){
+        position: absolute;
+        top: 10em;
+        left: 17em;
+        z-index: 0;
+    }
 `;

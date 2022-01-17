@@ -1,5 +1,6 @@
 import { HeaderArea, HeaderLogoArea, HeaderLogo, HeaderItem, HeaderBar, HeaderMobile } from './style.js'; 
 import {Link} from 'react-router-dom'; 
+import MenuIcon from '@mui/icons-material/Menu';
 
 export default function Header(){
     return(
@@ -21,7 +22,7 @@ export default function Header(){
                 </HeaderItem>
             </HeaderBar>
             <HeaderMobile>
-                Teste
+                <MenuIcon/>
             </HeaderMobile>
         </HeaderArea>
     );

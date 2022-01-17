@@ -80,17 +80,21 @@ export const MenuArea = styled.ul`
 export const MenuItem = styled.li`
     width: 100%;
     font-size: 5em;
+
+    :hover, :active{
+        color: #6930C3;
+    }
 `;
 
 export const MenuButton = styled.div`
     width: 100%;
     text-align: right;
     position: relative;
-    top: 1em;
-    right: 1em;
+    top: 1.3em;
+    right: 1.3em;
 
     svg{
-        font-size: 3em;
+        font-size: 2.7em;
     }
 
 `;

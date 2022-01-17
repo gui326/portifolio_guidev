@@ -4,6 +4,10 @@ export const Section = styled.section`
     padding: 2% 10%;
     max-width: 1240px;
     margin: auto;
+
+    @media (max-width: 468px){
+        padding: 2% 1rem;
+    }
 `;
 
 export const Heading = styled.div`
@@ -21,6 +25,10 @@ export const Imagem = styled.img`
 
     :hover{
         filter: none;
+    }
+
+    @media (max-width: 468px){
+        width: 100%;
     }
 `;
 
@@ -51,6 +59,10 @@ export const ProjectArea = styled.div`
 export const ContentArea = styled.div`
     width: 40%; 
     flex: 0 0 auto;
+
+    @media (max-width: 468px){
+        width: 100%;
+    }
 `;
 
 export const Title = styled.h3`
@@ -96,6 +108,10 @@ export const ImagemArea = styled.div`
     text-align: right;
     display: block;
     margin: auto;
+
+    @media (max-width: 468px){
+        width: 100%;
+    }
 `;
 
 

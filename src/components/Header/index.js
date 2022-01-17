@@ -3,6 +3,7 @@ import { MenuMobile, MenuArea, MenuButton, MenuItem, HeaderArea, HeaderLogoArea,
 import {Link} from 'react-router-dom'; 
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
+import Slide from '@mui/material/Slide';
 
 export default function Header(){
     const [menu, setMenu] = useState(false);
@@ -37,7 +38,7 @@ export default function Header(){
                 
             </HeaderArea>
 
-            {menu &&
+            <Slide direction="left" timeout={500} in={menu} mountOnEnter unmountOnExit>
                 <MenuMobile>
                     <MenuButton>
                         <CloseIcon onClick={() => handleMenu()}/>
@@ -54,7 +55,8 @@ export default function Header(){
                         </MenuItem>
                     </MenuArea>
                 </MenuMobile>
-            }
+            </Slide>
+            
         </header>
     );
 }

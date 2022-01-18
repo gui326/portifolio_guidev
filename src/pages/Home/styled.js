@@ -10,6 +10,7 @@ export const Section = styled.section`
     margin: auto;
 
     @media (max-width: 468px){
+        margin-top: 7em;
         padding: 5% 1rem;
         overflow: hidden;
         position: relative;
@@ -25,6 +26,10 @@ export const Heading = styled.div`
 export const HeadingIcon = styled.div`
     align-self: center;
     font-size: 40px;
+
+    @media (max-width: 468px){
+        font-size: 50px!important;
+    }
 `;
 
 export const HeadingText = styled.h5`
@@ -32,11 +37,20 @@ export const HeadingText = styled.h5`
     font-size: 18px;
     letter-spacing: 2px;
     padding-left: .7em;
+
+    @media (max-width: 468px){
+        font-size: 1.5rem;
+        margin: 0;
+    }
 `;
 
 export const IconJourney = styled(SchoolIcon)`
     color: #80FFDB;
     font-size: 40px!important;
+
+    @media (max-width: 468px){
+        font-size: 3rem!important;
+    }
 `;
 
 export const ContentArea = styled.div`
@@ -99,6 +113,12 @@ export const CardExp = styled.div`
     :hover ${StarArea}{
         display: none;
     }
+
+    @media (max-width: 468px){
+        margin: .5rem;
+        padding: 2rem 1.1rem;
+        min-width: 35%;
+    }
 `;
 
 export const Logo = styled.img`
@@ -109,6 +129,11 @@ export const Logo = styled.img`
 
 export const CardAreaExp = styled.div`
     display: inline-flex;
+
+    @media (max-width: 468px){
+        display: flex;
+        flex-wrap: wrap;
+    }
 `;
 
 export const ImagemAleatoria = styled.img`
@@ -117,6 +142,10 @@ export const ImagemAleatoria = styled.img`
     margin-top: -5em;
     filter: brightness(0.4);
     z-index: 0;
+
+    @media (max-width: 468px){
+        filter: brightness(0.2);
+    }
 `;
 
 export const CardAreaAdicionais = styled.div`
@@ -164,6 +193,13 @@ export const CardAdicional = styled.div`
     li{
         list-style: circle;
     }
+
+    @media (max-width: 468px){
+        margin-bottom: 2em;
+        width: 100%;
+        min-height: 200px;
+        padding: 0 1em;
+    }
 `;
 
 export const LeftSide = styled.div`
@@ -176,4 +212,8 @@ export const RightSide = styled.div`
     width: 50%;
     padding: 1em 0;
     text-align: left;
+
+    @media (max-width: 468px){
+        padding: 1em 3em;
+    }
 `;

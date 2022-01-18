@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const HeaderArea = styled.header`
     display: flex;
     width: 100%;
-    padding: 1.5rem 4rem;
+    padding: 1.5rem 0;
     max-width: 1240px;
     margin: auto;
     box-sizing: border-box;

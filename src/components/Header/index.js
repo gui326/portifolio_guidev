@@ -27,9 +27,11 @@ export default function Header(){
                     <Link to="/projects">
                         <HeaderItem>Projects</HeaderItem>
                     </Link>
-                    <HeaderItem>
-                        Contact
-                    </HeaderItem>
+                    <Link to="/contact">
+                        <HeaderItem>
+                            Contact
+                        </HeaderItem>
+                    </Link>
                 </HeaderBar>
                 <HeaderMobile>
                     <MenuIcon onClick={() => handleMenu()}/>
@@ -50,9 +52,9 @@ export default function Header(){
                         <Link to="/projects">
                             <MenuItem onClick={() => handleMenu()}>Projects</MenuItem>
                         </Link>
-                        <MenuItem>
-                            Contact
-                        </MenuItem>
+                        <Link to="/contact">
+                            <MenuItem onClick={() => handleMenu()}>Contact</MenuItem>
+                        </Link>
                     </MenuArea>
                 </MenuMobile>
             </Slide>

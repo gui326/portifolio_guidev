@@ -19,9 +19,11 @@ export default function Hero(){
                 </Slide>
             </RightSide>
 
-            <Fab id="teste_gui" sx={{background: '#98fee1', margin: 'auto'}}  color="white" aria-label="add">
-                <Icon/>
-            </Fab>
+            <a href="#sectionJourney">
+                <Fab id="teste_gui" sx={{background: '#98fee1', margin: 'auto'}}  color="white" aria-label="add">
+                    <Icon/>
+                </Fab>
+            </a>
         </Section>
     );
 }

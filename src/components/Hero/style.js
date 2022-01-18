@@ -8,7 +8,7 @@ export const Icon = styled(KeyboardArrowDownIcon)`
 export const Section = styled.section`
     display: flex;
     flex-wrap: wrap;
-    padding: 2% 10%;
+    padding: 2% 2rem;
     max-width: 1240px;
     margin: auto;
 
@@ -20,7 +20,7 @@ export const Section = styled.section`
 `;
 
 export const LeftSide = styled.div`
-    padding-top: 4%;
+    padding-top: 4rem;
     width: 50%;
 
     @media(max-width: 468px){

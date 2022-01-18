@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Section = styled.section`
-    padding: 2% 10%;
+    padding: 2% 2rem;
     max-width: 1240px;
     margin: auto;
 

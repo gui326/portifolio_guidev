@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import SchoolIcon from '@mui/icons-material/School';
+import { flexbox } from "@mui/system";
 
 export const Section = styled.section`
     display: flex;
@@ -36,4 +37,143 @@ export const HeadingText = styled.h5`
 export const IconJourney = styled(SchoolIcon)`
     color: #80FFDB;
     font-size: 40px!important;
+`;
+
+export const ContentArea = styled.div`
+    text-align: center;
+    width: 100%;
+`;
+
+export const Title = styled.h3`
+    font-size: 1.5rem;
+    font-weight: 300;
+
+    span{
+        color: #80FFDB;
+        font-weight: 500;
+    }
+`;
+
+export const StarArea = styled.div`
+    padding: .7em 0;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    transition: all ease 1s;
+
+    svg{
+        margin: auto;
+        color: #80FFDB;
+    }
+`;
+
+export const CardExp = styled.div`
+    border-radius: 15px;
+    border: 1px solid #80ffdb1a;
+    padding: 1.7rem 1.5rem 1rem 1.5rem;
+    margin: 1.5rem;
+    box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+    min-width: 130px;
+    transition: all ease 1s;
+    z-index: 1;
+    position: relative;
+
+    p{
+        position: relative;
+        padding: 0.7em 0;
+        display: none;
+        transition: all ease 1s;
+        font-size: .8rem;
+    }
+
+    :hover, :active, :focus, :visited, :target{
+        transform: scale(1.1);
+        background: #356154;
+        border: transparent;
+    }
+
+    :hover p{
+        display: block;
+    }
+
+    :hover ${StarArea}{
+        display: none;
+    }
+`;
+
+export const Logo = styled.img`
+    max-height: 65px;
+`;
+
+
+
+export const CardAreaExp = styled.div`
+    display: inline-flex;
+`;
+
+export const ImagemAleatoria = styled.img`
+    position: absolute;
+    right: -1em;
+    margin-top: -5em;
+    filter: brightness(0.4);
+    z-index: 0;
+`;
+
+export const CardAreaAdicionais = styled.div`
+    padding-top: 2.5em;
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 100%;
+`;
+
+export const CardAdicional = styled.div`
+    box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+    border: 1px solid #182521;
+    border-radius: 50px;
+    display: flex;
+    width: 47%;
+    margin: 1%;
+    box-sizing: border-box;
+    padding: 0 2em;
+
+    span{
+        color: #80FFDB;
+    }
+
+    h4{
+        font-size: 1.5rem;
+        margin: 0;
+    }
+
+    h6{
+        font-size: 1rem;
+        
+        margin: 0;
+    }
+
+    p{
+        margin: 0;
+        padding-bottom: .7em;
+        color: #80FFDB;
+    }
+
+    ul{
+        padding-left: 1em;
+    }
+
+    li{
+        list-style: circle;
+    }
+`;
+
+export const LeftSide = styled.div`
+    width: 50%;
+    margin: auto;
+`;
+
+export const RightSide = styled.div`
+    margin: auto;
+    width: 50%;
+    padding: 1em 0;
+    text-align: left;
 `;

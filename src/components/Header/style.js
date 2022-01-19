@@ -50,6 +50,7 @@ export const HeaderItem = styled.li`
     padding: 0 .8rem;
     cursor: pointer;
     transition: all ease .3s;
+    color: ${props => props.active};
 
     :hover{
         color: #6930C3;
@@ -91,6 +92,7 @@ export const MenuArea = styled.ul`
 export const MenuItem = styled.li`
     width: 100%;
     font-size: 5em;
+    color: ${props => props.active}!important;
 
     :hover, :active{
         color: #6930C3;

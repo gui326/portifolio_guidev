@@ -8,8 +8,11 @@ import { elementAcceptingRef } from '@mui/utils';
 
 export default function Header(){
     const [menu, setMenu] = useState(false);
+    const [active, setActive] = useState('home');
 
-    function handleMenu(){
+    function handleMenu(page){
+        setActive(page);
+
         if(menu){
             document.body.style = "";
             setMenu(false);
@@ -17,6 +20,13 @@ export default function Header(){
             document.body.style.overflowY = "hidden";
             setMenu(true);
         }
+
+        window.scrollTo(0, 0);
+    }
+
+    function handleActive(page){
+        window.scrollTo(0, 0);
+        setActive(page);
     }
 
     return(
@@ -24,24 +34,24 @@ export default function Header(){
             <Principal>
                 <HeaderLogoArea>
                     <Link to="/">
-                        <HeaderLogo>GuiDev</HeaderLogo>
+                        <HeaderLogo onClick={() => handleActive('home')} >GuiDev</HeaderLogo>
                     </Link>
                 </HeaderLogoArea>
                 <HeaderBar>
                     <Link to="/">
-                        <HeaderItem>Home</HeaderItem>
+                        <HeaderItem onClick={() => handleActive('home')} active={active == 'home' ? '#6930C3' : 'white'}>Home</HeaderItem>
                     </Link>
                     <Link to="/projects">
-                        <HeaderItem>Projects</HeaderItem>
+                        <HeaderItem onClick={() => handleActive('projects')} active={active == 'projects' ? '#6930C3' : 'white'}>Projects</HeaderItem>
                     </Link>
                     <Link to="/contact">
-                        <HeaderItem>
+                        <HeaderItem onClick={() => handleActive('contact')} active={active == 'contact' ? '#6930C3' : 'white'}>
                             Contact
                         </HeaderItem>
                     </Link>
                 </HeaderBar>
                 <HeaderMobile>
-                    <MenuIcon onClick={() => handleMenu()}/>
+                    <MenuIcon onClick={() => handleMenu(active)}/>
                 </HeaderMobile>
 
                 
@@ -50,17 +60,17 @@ export default function Header(){
             <Slide direction="left" timeout={500} in={menu} mountOnEnter unmountOnExit>
                 <MenuMobile>
                     <MenuButton>
-                        <CloseIcon onClick={() => handleMenu()}/>
+                        <CloseIcon onClick={() => handleMenu(active)}/>
                     </MenuButton>
                     <MenuArea>
                         <Link to="/">
-                            <MenuItem onClick={() => handleMenu()}>Home</MenuItem>
+                            <MenuItem active={active == 'home' ? '#6930C3' : 'white'} onClick={() => handleMenu('home')}>Home</MenuItem>
                         </Link>
                         <Link to="/projects">
-                            <MenuItem onClick={() => handleMenu()}>Projects</MenuItem>
+                            <MenuItem active={active == 'projects' ? '#6930C3' : 'white'} onClick={() => handleMenu('projects')}>Projects</MenuItem>
                         </Link>
                         <Link to="/contact">
-                            <MenuItem onClick={() => handleMenu()}>Contact</MenuItem>
+                            <MenuItem active={active == 'contact' ? '#6930C3' : 'white'} onClick={() => handleMenu('contact')}>Contact</MenuItem>
                         </Link>
                     </MenuArea>
                 </MenuMobile>

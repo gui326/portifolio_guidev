@@ -1,12 +1,22 @@
 import styled from "styled-components";
 
 export const HeaderArea = styled.header`
+    height: 7em;
+`;
+
+export const Principal = styled.div`
     display: flex;
     width: 100%;
     padding: 1.5rem 0;
     max-width: 1240px;
     margin: auto;
     box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(177deg, #151515, #151515e0);
+    z-index: 1040;
 
     @media (max-width: 468px){
         padding: 1.5rem 1rem;

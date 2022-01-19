@@ -1,20 +1,27 @@
 import { useState } from 'react';
-import { MenuMobile, MenuArea, MenuButton, MenuItem, HeaderArea, HeaderLogoArea, HeaderLogo, HeaderItem, HeaderBar, HeaderMobile } from './style.js'; 
+import { MenuMobile, Principal, MenuArea, MenuButton, MenuItem, HeaderArea, HeaderLogoArea, HeaderLogo, HeaderItem, HeaderBar, HeaderMobile } from './style.js'; 
 import {Link} from 'react-router-dom'; 
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import Slide from '@mui/material/Slide';
+import { elementAcceptingRef } from '@mui/utils';
 
 export default function Header(){
     const [menu, setMenu] = useState(false);
 
     function handleMenu(){
-        menu ? setMenu(false) : setMenu(true);
+        if(menu){
+            document.body.style = "";
+            setMenu(false);
+        } else {
+            document.body.style.overflowY = "hidden";
+            setMenu(true);
+        }
     }
 
     return(
-        <header>
-            <HeaderArea>
+        <HeaderArea>
+            <Principal>
                 <HeaderLogoArea>
                     <Link to="/">
                         <HeaderLogo>GuiDev</HeaderLogo>
@@ -38,7 +45,7 @@ export default function Header(){
                 </HeaderMobile>
 
                 
-            </HeaderArea>
+            </Principal>
 
             <Slide direction="left" timeout={500} in={menu} mountOnEnter unmountOnExit>
                 <MenuMobile>
@@ -59,6 +66,6 @@ export default function Header(){
                 </MenuMobile>
             </Slide>
             
-        </header>
+        </HeaderArea>
     );
 }

@@ -11,6 +11,7 @@ export const Section = styled.section`
     padding: 2% 2rem;
     max-width: 1240px;
     margin: auto;
+    margin-top: 6em;
 
     @media (max-width: 468px){
         padding: 5% 1rem;

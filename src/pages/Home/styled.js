@@ -62,6 +62,10 @@ export const Title = styled.h3`
     font-size: 1.5rem;
     font-weight: 300;
 
+    :last-of-type{
+        margin-top: 2.4em;
+    }
+
     span{
         color: #80FFDB;
         font-weight: 500;
@@ -148,7 +152,7 @@ export const ImagemAleatoria = styled.img`
     z-index: 0;
 
     @media (max-width: 468px){
-        filter: brightness(0.2);
+        filter: brightness(0.5);
     }
 `;
 

@@ -25,6 +25,7 @@ export const LeftSide = styled.div`
 
     @media(max-width: 468px){
         width: 95%;
+        padding-top: 1rem;
     }
 `;
 
@@ -81,7 +82,7 @@ export const Imagem = styled.img`
     @media (max-width: 468px){
         position: absolute;
         width: 100%;
-        top: 8em;
+        top: 5em;
         left: 16em;
         z-index: 0;
     }

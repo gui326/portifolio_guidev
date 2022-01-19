@@ -40,3 +40,9 @@ p{
 .loaderOff{
   display: none!important;
 }
+
+@media (max-width: 468px){
+  body{
+    background: linear-gradient(134deg,#101010,#0a0a0ae8 45.5%);  
+  }
+}

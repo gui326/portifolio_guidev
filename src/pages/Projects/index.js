@@ -1,13 +1,14 @@
-import { Section, Heading, ProjectArea, ContentArea, Title, Text, LogoArea, Logo, LinkArea, LinkA, Imagem, ImagemArea} from './styled';
+import { Section, IconArrow, Heading, ProjectArea, ContentArea, Title, Text, LogoArea, Logo, LinkArea, LinkA, Imagem, ImagemArea} from './styled';
 import Skeleton from '@mui/material/Skeleton';
 import { Grid } from '@mui/material';
+
 
 export default function Projects(){
     return(
         <Section>
             <Heading>
-                <img src="iconInsight.svg"/>
-                Projects
+                <img width="45" src="iconInsight.svg"/>
+                <h3>Projects</h3>
             </Heading>
             <Grid container spacing={2}>
                 <Grid item md={12}>
@@ -28,6 +29,7 @@ export default function Projects(){
                             </LogoArea>
                             <LinkArea>
                                 <LinkA href={'https://newfisco.vercel.app/'} target={'_blank'}>
+                                    <IconArrow/>
                                     https://newfisco.vercel.app/
                                 </LinkA>
                             </LinkArea>
@@ -66,6 +68,7 @@ export default function Projects(){
                         </LogoArea>
                         <LinkArea>
                             <LinkA href={'https://new-vida-cotacao-react.vercel.app/'} target={'_blank'}>
+                            <IconArrow/>
                             https://new-vida-cotacao-react.vercel.app/
                             </LinkA>
                         </LinkArea>
@@ -74,18 +77,7 @@ export default function Projects(){
                 <Grid item md={8} xs={12}>
                     <ProjectArea>
                         <Title>Teach Ana</Title>
-                        <Text>Sistema web para gerenciamento de notas fiscais e geração do arquivo Sintegra</Text>
-                        <LogoArea>
-                            <Logo src="laravelLogo.png"/>
-                            <Logo src="phpLogo.png"/>
-                            <Logo src="htmlLogo.png"/>
-                            <Logo src="cssLogo.png"/>
-                        </LogoArea>
-                        <LinkArea>
-                            <LinkA href={'https://newfisco.vercel.app/'} target={'_blank'}>
-                                https://newfisco.vercel.app/
-                            </LinkA>
-                        </LinkArea>
+
                     </ProjectArea>
                 </Grid>
             </Grid>

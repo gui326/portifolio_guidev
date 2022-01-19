@@ -15,7 +15,6 @@ function App() {
   return (
     <BrowserRouter>
         <Header/>
-        <p id="testeMessage">Em desenvolvimento</p>
         <Routes>
           <Route path="/" element={<Home />}/>
           <Route path="/projects" element={<Projects />}/>

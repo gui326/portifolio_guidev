@@ -115,14 +115,18 @@ export const CardExp = styled.div`
     }
 
     @media (max-width: 468px){
-        margin: .5rem;
         padding: 2rem 1.1rem;
-        min-width: 35%;
+        min-width: 36%;
+        margin: 0.3em;
     }
 `;
 
 export const Logo = styled.img`
     max-height: 65px;
+
+    @media (max-width: 468px){
+        max-width: 110px;
+    }
 `;
 
 

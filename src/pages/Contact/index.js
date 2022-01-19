@@ -1,4 +1,4 @@
-import {Section, ContentArea, LeftSide, RightSide, Title, ContatoArea, IconArea, ImagemArea, TextArea, Text, Imagem} from "./styled";
+import {Section, ContentArea, LeftSide, TextAreaIcon, RightSide, Title, ContatoArea, IconArea, ImagemArea, TextArea, Text, Imagem} from "./styled";
 import EmailIcon from '@mui/icons-material/Email';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -15,18 +15,19 @@ export default function Contact(){
                 <RightSide>
                     <TextArea>
                         <Title>
-                            Contato
+                            <img width="40" src="iconContact.svg"/>
+                            <h3>Contato</h3>
                         </Title>
                         <a target="_blank" href="mailto:guilherme.326@hotmail.com">
                             <ContatoArea>
                                 <IconArea>
                                     <EmailIcon/>
                                 </IconArea>
-                                <TextArea>
+                                <TextAreaIcon>
                                     <Text>
                                         guilherme.326@hotmail.com
                                     </Text>
-                                </TextArea>
+                                </TextAreaIcon>
                             </ContatoArea>
                         </a>
 
@@ -35,11 +36,11 @@ export default function Contact(){
                                 <IconArea>
                                     <GitHubIcon/>
                                 </IconArea>
-                                <TextArea>
+                                <TextAreaIcon>
                                     <Text>
                                         https://github.com/gui326
                                     </Text>
-                                </TextArea>
+                                </TextAreaIcon>
                             </ContatoArea>
                         </a>
 
@@ -48,11 +49,11 @@ export default function Contact(){
                                 <IconArea>
                                     <LinkedInIcon/>
                                 </IconArea>
-                                <TextArea>
+                                <TextAreaIcon>
                                     <Text>
                                     https://www.linkedin.com/in/guilherme-batista-b38400197/
                                     </Text>
-                                </TextArea>
+                                </TextAreaIcon>
                             </ContatoArea>
                         </a>
                     </TextArea>

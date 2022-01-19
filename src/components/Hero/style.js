@@ -29,7 +29,6 @@ export const LeftSide = styled.div`
 `;
 
 export const RightSide = styled.div`
-    padding-top: 3%;
     display: flex;
     align-self: center;
     width: 50%;
@@ -43,6 +42,11 @@ export const SubTitle = styled.h6`
     font-weight: 300;
     font-size: 14px;
     margin-bottom: 1px;
+
+    @media (max-width: 468px){
+        margin-top: 2em;
+        font-size: 16px;
+    }
 `;
 
 export const Title = styled.h1`
@@ -67,6 +71,7 @@ export const Text = styled.p`
     width: 80%;
     font-size: 16px;
     color: #A7A7A7;
+    line-height: 1.5em;
 `;
 
 export const Imagem = styled.img`
@@ -76,7 +81,7 @@ export const Imagem = styled.img`
     @media (max-width: 468px){
         position: absolute;
         width: 100%;
-        top: 5em;
+        top: 8em;
         left: 16em;
         z-index: 0;
     }

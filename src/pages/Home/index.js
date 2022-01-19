@@ -66,7 +66,7 @@ export default function Home(){
 
                     <CardAreaExp>
                         <CardExp>
-                            <Logo src="codeIgniterLogo.png"/>
+                            <Logo src="codeigniterLogo.png"/>
                             <p>CodeIgniter - 1 Ano</p>
                             <StarArea>
                                 <StarIcon/>
@@ -102,7 +102,7 @@ export default function Home(){
                         
                     </CardAreaExp>
 
-                    <ImagemAleatoria src="testeimagem.svg"/>
+                    <ImagemAleatoria src="backgroundJourney.svg"/>
 
                     <Title>
                         E tenho <span>conhecimento</span> em

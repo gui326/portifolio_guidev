@@ -164,6 +164,8 @@ export default function Home(){
                                 <ul>
                                     <li>SEO</li>
                                     <li>Selenium Python</li>
+                                    <li>Git</li>
+                                    <li>Scrum</li>
                                 </ul>
                             </RightSide>
                         </CardAdicional>

@@ -76,7 +76,16 @@ export default function Projects(){
                 </Grid>
                 <Grid item md={8} xs={12}>
                     <ProjectArea>
-                        <Title>Teach Ana</Title>
+                        <Title>Teacher Ana</Title>
+                        <LogoArea>
+                            <Logo src="reactLogo.png"/>
+                        </LogoArea>
+                        <LinkArea>
+                            <LinkA href={'https://teacher-ana.vercel.app/'} target={'_blank'}>
+                                <IconArrow/>
+                                https://teacher-ana.vercel.app/
+                            </LinkA>
+                        </LinkArea>
 
                     </ProjectArea>
                 </Grid>

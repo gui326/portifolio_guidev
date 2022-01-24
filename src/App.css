@@ -9,7 +9,7 @@ body{
   padding: 0;
   box-sizing: border-box;
   overflow-x: hidden;
-  background: linear-gradient(134deg, black 0, #000000e8 50%);
+  background: linear-gradient(to right,#141414 0,#121212 100%);
   color: white;
   font-family: 'Rubik';
   width: 100%;

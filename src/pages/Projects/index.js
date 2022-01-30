@@ -30,7 +30,7 @@ export default function Projects(){
                             <LinkArea>
                                 <LinkA href={'https://newfisco.vercel.app/'} target={'_blank'}>
                                     <IconArrow/>
-                                    https://newfisco.vercel.app/
+                                    Visualizar
                                 </LinkA>
                             </LinkArea>
                         </ContentArea>
@@ -68,22 +68,44 @@ export default function Projects(){
                         </LogoArea>
                         <LinkArea>
                             <LinkA href={'https://new-vida-cotacao-react.vercel.app/'} target={'_blank'}>
-                            <IconArrow/>
-                            https://new-vida-cotacao-react.vercel.app/
+                                <IconArrow/>
+                                Visualizar
                             </LinkA>
                         </LinkArea>
                     </ProjectArea>
                 </Grid>
-                <Grid item md={8} xs={12}>
+                <Grid item md={4} xs={12}>
                     <ProjectArea>
                         <Title>Teacher Ana</Title>
+                        <Text>
+                            Plataforma Web feita com React e o back-end está sendo utilizado FireBase.
+                        </Text>
                         <LogoArea>
                             <Logo src="reactLogo.png"/>
+                            <Logo src="firebaseLogo.png"/>
                         </LogoArea>
                         <LinkArea>
                             <LinkA href={'https://teacher-ana.vercel.app/'} target={'_blank'}>
                                 <IconArrow/>
-                                https://teacher-ana.vercel.app/
+                                Visualizar
+                            </LinkA>
+                        </LinkArea>
+
+                    </ProjectArea>
+                </Grid>
+                <Grid item md={4} xs={12}>
+                    <ProjectArea>
+                        <Title>InvesteJá</Title>
+                        <Text>
+                            Plataforma Web sobre investimentos feito com React.
+                        </Text>
+                        <LogoArea>
+                            <Logo src="reactLogo.png"/>
+                        </LogoArea>
+                        <LinkArea>
+                            <LinkA href={'https://investeja.vercel.app/'} target={'_blank'}>
+                                <IconArrow/>
+                                Visualizar
                             </LinkA>
                         </LinkArea>
 

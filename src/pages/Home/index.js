@@ -24,10 +24,9 @@ export default function Home(){
 
                     <CardAreaExp>
                         <CardExp>
-                            <Logo src="phpLogo.png"/>
-                            <p>PHP - 2 Anos</p>
+                            <Logo src="reactLogo.png"/>
+                            <p>React - 4 meses</p>
                             <StarArea>
-                                <StarIcon/>
                                 <StarIcon/>
                                 <StarIcon/>
                             </StarArea>
@@ -66,8 +65,8 @@ export default function Home(){
 
                     <CardAreaExp>
                         <CardExp>
-                            <Logo src="codeigniterLogo.png"/>
-                            <p>CodeIgniter - 1 Ano</p>
+                            <Logo src="phpLogo.png"/>
+                            <p>PHP - 1 Ano</p>
                             <StarArea>
                                 <StarIcon/>
                                 <StarIcon/>
@@ -135,10 +134,6 @@ export default function Home(){
                         </CardExp>
                         
                     </CardAreaExp>
-
-                    <Title>
-                        <u>E estou apreendendo <span>React</span></u>
-                    </Title>
 
                     <CardAreaAdicionais>
                         <CardAdicional>

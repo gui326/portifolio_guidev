@@ -29,10 +29,11 @@ export const HeaderLogoArea = styled.div`
 `;
 
 export const HeaderLogo = styled.p`
-    font-family: 'Kadwa';
+    font-family: 'Rubik';
     color: #80FFDB;
     font-size: 1.7rem;
-    letter-spacing: -3px;
+    letter-spacing: 0;
+    font-weight: 300;
     cursor: pointer;
 `;
 
@@ -53,7 +54,7 @@ export const HeaderItem = styled.li`
     color: ${props => props.active};
 
     :hover{
-        color: #6930C3;
+        color: #80FFDB;
     }
 `;
 
@@ -95,7 +96,7 @@ export const MenuItem = styled.li`
     color: ${props => props.active}!important;
 
     :hover, :active{
-        color: #6930C3;
+        color: #80FFDB;
     }
 `;
 

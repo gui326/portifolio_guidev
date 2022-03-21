@@ -7,7 +7,7 @@ export default function Projects(){
     return(
         <Section>
             <Heading>
-                <img width="45" src="iconInsight.svg"/>
+                <img width="37" src="iconInsight.svg"/>
                 <h3>Projects</h3>
             </Heading>
             <Grid container spacing={2}>
@@ -22,10 +22,10 @@ export default function Projects(){
                                 da coleta desses dados.
                             </Text>
                             <LogoArea>
-                                <Logo src="laravelLogo.png"/>
-                                <Logo src="phpLogo.png"/>
-                                <Logo src="htmlLogo.png"/>
-                                <Logo src="cssLogo.png"/>
+                                <Logo alt="laravel logo" title="Laravel" src="laravelLogo.png"/>
+                                <Logo alt="Php Logo" title="PHP" src="phpLogo.png"/>
+                                <Logo alt="HTML5 Logo" title="HTML5" src="htmlLogo.png"/>
+                                <Logo alt="CSS3 Logo" title="CSS3" src="cssLogo.png"/>
                             </LogoArea>
                             <LinkArea>
                                 <LinkA href={'https://newfisco.vercel.app/'} target={'_blank'}>
@@ -45,29 +45,16 @@ export default function Projects(){
             <Grid pt={1} container spacing={1}>
                 <Grid item md={4} xs={12}>
                     <ProjectArea>
-                        <Title>Vida Cotação</Title>
+                        <Title>Formulário Pacote de Adesivo</Title>
                         <Text>
-                            Multi formulário para cotação de um seguro de vida.
-                            <br/>
-                            Com todo o processo:
-                            <br/>
-                            Captação de Lead;
-                            <br/>
-                            Selecionamento do valor de cotação;
-                            <br/>
-                            Adição de complementos;
-                            <br/>
-                            Preenchimentos de dados pessoais;
-                            <br/>
-                            Seleção de beneficiários;
-                            <br/>
-                            Pagamento.
+                            Formulário para compra de pacote de adesivos.
+                            Com um checkout simples de pagamento.
                         </Text>
                         <LogoArea>
-                            <Logo src="reactLogo.png"/>
+                            <Logo alt="React Logo" title="React" src="reactLogo.png"/>
                         </LogoArea>
                         <LinkArea>
-                            <LinkA href={'https://new-vida-cotacao-react.vercel.app/'} target={'_blank'}>
+                            <LinkA href={'https://teste-form-rho.vercel.app/'} target={'_blank'}>
                                 <IconArrow/>
                                 Visualizar
                             </LinkA>
@@ -81,8 +68,8 @@ export default function Projects(){
                             Plataforma Web feita com React e o back-end está sendo utilizado FireBase.
                         </Text>
                         <LogoArea>
-                            <Logo src="reactLogo.png"/>
-                            <Logo src="firebaseLogo.png"/>
+                            <Logo alt="React Logo" title="React" src="reactLogo.png"/>
+                            <Logo alt="Firebase Logo" title="Firebase" src="firebaseLogo.png"/>
                         </LogoArea>
                         <LinkArea>
                             <LinkA href={'https://teacher-ana.vercel.app/'} target={'_blank'}>
@@ -100,7 +87,7 @@ export default function Projects(){
                             Plataforma Web sobre investimentos feito com React.
                         </Text>
                         <LogoArea>
-                            <Logo src="reactLogo.png"/>
+                            <Logo title="React Logo" title="React" src="reactLogo.png"/>
                         </LogoArea>
                         <LinkArea>
                             <LinkA href={'https://investeja.vercel.app/'} target={'_blank'}>

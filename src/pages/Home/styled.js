@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import SchoolIcon from '@mui/icons-material/School';
-import { flexbox } from "@mui/system";
 
 export const Section = styled.section`
     display: flex;

@@ -139,7 +139,7 @@ export const LinkA = styled.a`
     display: inline;
 
     :hover{
-        color: #6930C3;
+        color: rgb(128, 255, 219);
     }
 `;
 

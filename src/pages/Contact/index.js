@@ -18,7 +18,7 @@ export default function Contact(){
                 <RightSide>
                     <TextArea>
                         <Title>
-                            <img width="40" src="iconContact.svg"/>
+                            <img width="33" src="iconContact.svg"/>
                             <h3>Contato</h3>
                         </Title>
                         <a target="_blank" href="mailto:guilherme.326@hotmail.com">

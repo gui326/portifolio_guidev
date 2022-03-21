@@ -32,7 +32,7 @@ export const ErrorButton = styled.button`
 
     :hover{
         color: white;
-        background: #6930C3;
+        background: #80FFDB;
     }
 `;
 

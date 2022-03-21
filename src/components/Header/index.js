@@ -39,13 +39,13 @@ export default function Header(){
                 </HeaderLogoArea>
                 <HeaderBar>
                     <Link to="/">
-                        <HeaderItem onClick={() => handleActive('home')} active={active == 'home' ? '#6930C3' : 'white'}>Home</HeaderItem>
+                        <HeaderItem onClick={() => handleActive('home')} active={active == 'home' ? '#80FFDB' : 'white'}>Home</HeaderItem>
                     </Link>
                     <Link to="/projects">
-                        <HeaderItem onClick={() => handleActive('projects')} active={active == 'projects' ? '#6930C3' : 'white'}>Projects</HeaderItem>
+                        <HeaderItem onClick={() => handleActive('projects')} active={active == 'projects' ? '#80FFDB' : 'white'}>Projects</HeaderItem>
                     </Link>
                     <Link to="/contact">
-                        <HeaderItem onClick={() => handleActive('contact')} active={active == 'contact' ? '#6930C3' : 'white'}>
+                        <HeaderItem onClick={() => handleActive('contact')} active={active == 'contact' ? '#80FFDB' : 'white'}>
                             Contact
                         </HeaderItem>
                     </Link>
@@ -64,13 +64,13 @@ export default function Header(){
                     </MenuButton>
                     <MenuArea>
                         <Link to="/">
-                            <MenuItem active={active == 'home' ? '#6930C3' : 'white'} onClick={() => handleMenu('home')}>Home</MenuItem>
+                            <MenuItem active={active == 'home' ? '#80FFDB' : 'white'} onClick={() => handleMenu('home')}>Home</MenuItem>
                         </Link>
                         <Link to="/projects">
-                            <MenuItem active={active == 'projects' ? '#6930C3' : 'white'} onClick={() => handleMenu('projects')}>Projects</MenuItem>
+                            <MenuItem active={active == 'projects' ? '#80FFDB' : 'white'} onClick={() => handleMenu('projects')}>Projects</MenuItem>
                         </Link>
                         <Link to="/contact">
-                            <MenuItem active={active == 'contact' ? '#6930C3' : 'white'} onClick={() => handleMenu('contact')}>Contact</MenuItem>
+                            <MenuItem active={active == 'contact' ? '#80FFDB' : 'white'} onClick={() => handleMenu('contact')}>Contact</MenuItem>
                         </Link>
                     </MenuArea>
                 </MenuMobile>

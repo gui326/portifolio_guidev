@@ -56,6 +56,7 @@ export const Imagem = styled.img`
 
 export const Title = styled.div`
     display: flex;
+    margin-bottom: 5%;
 
     h3{
         font-size: 18px;
@@ -77,7 +78,7 @@ export const ContatoArea = styled.div`
     padding-top: .3em;
 
     :hover{
-        color: #6930C3;
+        color: #80FFDB;
     }
 `;
 

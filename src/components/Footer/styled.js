@@ -1,26 +1,23 @@
 import styled from "styled-components";
 
-export const FooterArea = styled.footer`
-    position: relative;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin-top: 3em;
-    width: 100%;
-    text-align: right;
+export const Area = styled.footer` 
+    margin-top: 5em;
+    margin-bottom: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-self: center;
+
 
     p{
-        padding-bottom: 1rem;
-        padding-right: 1rem;
-        font-size: .85rem;
-        font-weight: 300;
-    }
+        align-self: center;
+        margin: 0;
+        color: black;
+        text-align: right;
 
-    a{
-        display: inline;
-    }
-
-    a:hover{
-        color: #80FFDB;
+        :hover{
+            opacity: .6;
+        }
     }
 `;

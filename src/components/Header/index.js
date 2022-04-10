@@ -1,81 +1,53 @@
-import { useState } from 'react';
-import { MenuMobile, Principal, MenuArea, MenuButton, MenuItem, HeaderArea, HeaderLogoArea, HeaderLogo, HeaderItem, HeaderBar, HeaderMobile } from './style.js'; 
-import {Link} from 'react-router-dom'; 
+import { useState } from "react";
+import { Container } from "@mui/material";
+import Link from "next/link";
+
 import MenuIcon from '@mui/icons-material/Menu';
-import CloseIcon from '@mui/icons-material/Close';
-import Slide from '@mui/material/Slide';
-import { elementAcceptingRef } from '@mui/utils';
+
+import { Area, LogoArea, MenuArea, Menu, Item, MenuMobile } from "./styled";
+import {useRouter} from 'next/router';
+import MegaMenuMobile from "../MegaMenuMobile";
+
 
 export default function Header(){
-    const [menu, setMenu] = useState(false);
-    const [active, setActive] = useState('home');
-
-    function handleMenu(page){
-        setActive(page);
-
-        if(menu){
-            document.body.style = "";
-            setMenu(false);
-        } else {
-            document.body.style.overflowY = "hidden";
-            setMenu(true);
-        }
-
-        window.scrollTo(0, 0);
-    }
-
-    function handleActive(page){
-        window.scrollTo(0, 0);
-        setActive(page);
-    }
+    const [open, setOpen] = useState(false);
+    const router = useRouter();
 
     return(
-        <HeaderArea>
-            <Principal>
-                <HeaderLogoArea>
-                    <Link to="/">
-                        <HeaderLogo onClick={() => handleActive('home')} >GuiDev</HeaderLogo>
+        <Area>
+            <Container style={{ display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap' }}>
+                <LogoArea>
+                    <Link href="/" passHref>
+                        <a>
+                            <h3>GuiDev</h3>
+                        </a>
                     </Link>
-                </HeaderLogoArea>
-                <HeaderBar>
-                    <Link to="/">
-                        <HeaderItem onClick={() => handleActive('home')} active={active == 'home' ? '#80FFDB' : 'white'}>Home</HeaderItem>
-                    </Link>
-                    <Link to="/projects">
-                        <HeaderItem onClick={() => handleActive('projects')} active={active == 'projects' ? '#80FFDB' : 'white'}>Projects</HeaderItem>
-                    </Link>
-                    <Link to="/contact">
-                        <HeaderItem onClick={() => handleActive('contact')} active={active == 'contact' ? '#80FFDB' : 'white'}>
-                            Contact
-                        </HeaderItem>
-                    </Link>
-                </HeaderBar>
-                <HeaderMobile>
-                    <MenuIcon onClick={() => handleMenu(active)}/>
-                </HeaderMobile>
-
-                
-            </Principal>
-
-            <Slide direction="left" timeout={500} in={menu} mountOnEnter unmountOnExit>
+                </LogoArea>
+                <MenuArea>
+                    <Menu>
+                        <Link href="/" passHref>
+                            <a>
+                                <Item ativo={router.pathname === "/"}>Home</Item>
+                            </a>
+                        </Link>
+                        <Link href="/projetos" passHref>
+                            <a>
+                                <Item ativo={router.pathname === "/projetos"}>Projetos</Item>
+                            </a>
+                        </Link>
+                        <Link href="/contatos" passHref>
+                            <a>
+                                <Item ativo={router.pathname === "/contato"}>Contato</Item>
+                            </a>
+                        </Link>
+                    </Menu>
+                </MenuArea>
                 <MenuMobile>
-                    <MenuButton>
-                        <CloseIcon onClick={() => handleMenu(active)}/>
-                    </MenuButton>
-                    <MenuArea>
-                        <Link to="/">
-                            <MenuItem active={active == 'home' ? '#80FFDB' : 'white'} onClick={() => handleMenu('home')}>Home</MenuItem>
-                        </Link>
-                        <Link to="/projects">
-                            <MenuItem active={active == 'projects' ? '#80FFDB' : 'white'} onClick={() => handleMenu('projects')}>Projects</MenuItem>
-                        </Link>
-                        <Link to="/contact">
-                            <MenuItem active={active == 'contact' ? '#80FFDB' : 'white'} onClick={() => handleMenu('contact')}>Contact</MenuItem>
-                        </Link>
-                    </MenuArea>
+                    <MenuIcon onClick={() => setOpen(true)}/>
                 </MenuMobile>
-            </Slide>
-            
-        </HeaderArea>
-    );
+            </Container>
+
+            <MegaMenuMobile open={open} setOpen={setOpen}/>
+        </Area>
+    )
 }

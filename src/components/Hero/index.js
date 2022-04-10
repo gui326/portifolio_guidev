@@ -1,29 +1,28 @@
-import { Icon, Section, LeftSide, RightSide, SubTitle, Title, SpecialText, Text, Imagem } from './style.js';
-import Slide from '@mui/material/Slide';
-import Fab from '@mui/material/Fab';
+import { Container, Grid } from "@mui/material";
+import Image from "next/image";
 
-import './hero.css';
+import { Info, Name, Description, BackgroundImage } from "./styled";
+
 
 export default function Hero(){
     return(
-        <Section>
-            <LeftSide>
-                <SubTitle>Olá. Sou o</SubTitle>
-                <Title>Guilherme Batista da Silva</Title>
-                <SpecialText>Desenvolvedor Full-Stack</SpecialText>
-                <Text>Sou desenvolvedor com conhecimento sólido em php, html, css e javascript. Iniciando uma nova jornada com React.</Text>
-            </LeftSide>
-            <RightSide>
-                <Slide direction="left" timeout={500} in={true} mountOnEnter unmountOnExit>
-                <Imagem src="heroImagem.svg"/>
-                </Slide>
-            </RightSide>
-
-            <a href="#sectionJourney">
-                <Fab id="teste_gui" sx={{background: '#98fee1', margin: 'auto'}}  color="white" aria-label="add">
-                    <Icon/>
-                </Fab>
-            </a>
-        </Section>
-    );
+        <Container style={{ height: '100vh', alignSelf: 'center', display: 'flex' }}>
+            <Grid container spacing={6} overflow="hidden" position="relative">
+                <Grid item md={6} xs={10} alignSelf="center">
+                    <Info><span>Olá</span>, eu sou o</Info>
+                    <Name>GUILHERME BATISTA</Name>
+                    <Description>
+                        Desenvolvedor front-end, com conhecimento em HTML5, CSS3, JavaScript e React. 
+                        Apaixonado pelo mundo da programação.
+                        E atualmente estou utilizando React, Next e React Native.
+                    </Description>
+                </Grid>
+                <Grid item md={6} xs={2} alignSelf="center" textAlign="end">
+                    <BackgroundImage>
+                        <Image src="/images/backgroundHome.png" alt="Desenho" width="500" height="500"/>
+                    </BackgroundImage>
+                </Grid>
+            </Grid>
+        </Container>
+    )
 }

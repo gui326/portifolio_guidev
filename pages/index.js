@@ -5,8 +5,8 @@ import Script from 'next/script';
 export default function Home() {
   return (
     <>
-        <Script strategy="lazyOnload" src={`https://www.googletagmanager.com/gtag/js?id=G-T7BGK77Z39`} />
-        <Script strategy="lazyOnload">
+        <Script id="scriptTag1" strategy="lazyOnload" src={`https://www.googletagmanager.com/gtag/js?id=G-T7BGK77Z39`} />
+        <Script id="scriptTag2" strategy="lazyOnload">
             {`
                 window.dataLayer = window.dataLayer || [];
                 function gtag(){dataLayer.push(arguments);}

@@ -5,11 +5,6 @@ import Script from 'next/script';
 export default function Home() {
   return (
     <>
-      <Head>
-        <title>GuiDev - Portifólio de um desenvolvedor</title>
-        <meta name="description" content="GuiDev - Portifólio de um desenvolvedor" />
-        <link rel="icon" href="/favicon.ico" />
-    
         <Script strategy="lazyOnload" src={`https://www.googletagmanager.com/gtag/js?id=G-T7BGK77Z39`} />
         <Script strategy="lazyOnload">
             {`
@@ -20,6 +15,11 @@ export default function Home() {
                 gtag('config', 'G-T7BGK77Z39');
             `}
         </Script>
+
+      <Head>
+        <title>GuiDev - Portifólio de um desenvolvedor</title>
+        <meta name="description" content="GuiDev - Portifólio de um desenvolvedor" />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <HomeScreen />

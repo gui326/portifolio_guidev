@@ -16,7 +16,7 @@ export const Description = styled.p`
     font-family: 'Inter';
     font-weight: 500;
     font-size: 15px;
-    color: grey;
+    color: #0b0b0b;
     text-align: center;
     line-height: 1.7em;
 
@@ -65,11 +65,8 @@ export const Card = styled.div`
     .info--show{
         display: none;
     }
-
-    img{
-        transition: all .3s ease-out;
-        filter: grayscale(1);
-    }
+    
+    
 
     :hover{
         box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
@@ -82,9 +79,7 @@ export const Card = styled.div`
             display: block;
         }
 
-        img{
-            filter: grayscale(0);
-        }
+        
     }
 
     @media (max-width: 468px){

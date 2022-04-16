@@ -24,7 +24,7 @@ export const Name = styled.h2`
 
 export const Description = styled.p` 
     margin: 0;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 16px;
     line-height: 38px;
     color: #444444;

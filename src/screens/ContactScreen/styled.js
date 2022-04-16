@@ -17,7 +17,7 @@ export const Description = styled.p`
     font-family: 'Inter';
     font-weight: 500;
     font-size: 15px;
-    color: grey;
+    color: #0b0b0b;
     text-align: center;
 
     span{

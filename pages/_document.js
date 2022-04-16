@@ -1,7 +1,7 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document';
 // Import styled components ServerStyleSheet
 import { ServerStyleSheet } from 'styled-components';
-import Script from 'next/script';
+
 
 export default class MyDocument extends Document {
   static getInitialProps({ renderPage }) {
@@ -23,21 +23,9 @@ export default class MyDocument extends Document {
   render() {
     return (
       <Html lang='pt-BR'>
-
-        <Script id="scriptTag1" strategy="lazyOnload" src={`https://www.googletagmanager.com/gtag/js?id=G-T7BGK77Z39`} />
-        <Script id="scriptTag2" strategy="lazyOnload">
-            {`
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('js', new Date());
-
-                gtag('config', 'G-T7BGK77Z39');
-            `}
-        </Script>
-
         <Head>
             <link rel="preconnect" href="https://fonts.googleapis.com" />
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
             <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=PT+Serif:wght@400;700&display=swap" rel="stylesheet" />
             <link rel="icon" href="/favicon.ico" />
             {this.props.styleTags}

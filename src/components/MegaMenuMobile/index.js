@@ -29,7 +29,7 @@ export default function MegaMenuMobile(props) {
             TransitionComponent={Transition}
         >
                 <Area>
-                    <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'flex-end' }}>
+                    <div style={{ padding: '.9em', display: 'flex', flexDirection: 'row', justifyContent: 'flex-end' }}>
                         <IconButton
                         edge="start"
                         color="inherit"
@@ -47,6 +47,11 @@ export default function MegaMenuMobile(props) {
                     <Link href="/projetos" passHref>
                         <a>
                             <Item ativo={router.pathname === "/projetos" ? true : false}>Projetos</Item>
+                        </a>
+                    </Link>
+                    <Link href="/contato" passHref>
+                        <a>
+                            <Item ativo={router.pathname === "/contato" ? true : false}>Contato</Item>
                         </a>
                     </Link>
                 </Area>

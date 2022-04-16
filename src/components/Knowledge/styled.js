@@ -8,10 +8,6 @@ export const Title = styled.h2`
     text-align: center;
     margin: 0;
     padding-bottom: .3em;
-
-    @media (max-width: 468px){
-        font-size: 22px;
-    }
 `;
 
 export const Description = styled.p` 
@@ -22,6 +18,7 @@ export const Description = styled.p`
     font-size: 15px;
     color: grey;
     text-align: center;
+    line-height: 1.7em;
 
     span{
         background: -webkit-linear-gradient(left,#670b62 10%, #a51d62 30%, #ce213d 80%);

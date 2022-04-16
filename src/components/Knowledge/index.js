@@ -112,6 +112,34 @@ export default function Knowledge(){
                     <p className="text--show">C#</p>
                     <p className="info--show">1 mês</p>
                 </Card>
+
+                <Card>
+                    <Image src="/images/logoCodeigniter.png" alt="Logo Code Igniter" width="80" height="80"/>
+
+                    <p className="text--show">Code Igniter</p>
+                    <p className="info--show">1 ano</p>
+                </Card>
+
+                <Card>
+                    <Image src="/images/logoGraphql.png" alt="Logo GraphQL" width="80" height="80"/>
+
+                    <p className="text--show">GraphQL</p>
+                    <p className="info--show">1 mês</p>
+                </Card>
+
+                <Card>
+                    <Image src="/images/logoMysql.png" alt="Logo Mysql" width="90" height="80"/>
+
+                    <p className="text--show">MySql</p>
+                    <p className="info--show">6 meses</p>
+                </Card>
+
+                <Card>
+                    <Image src="/images/logoFirebase.png" alt="Logo Firebase" width="80" height="80"/>
+
+                    <p className="text--show">Firebase</p>
+                    <p className="info--show">1 mês</p>
+                </Card>
             </KnowArea>
         </Container>
     )

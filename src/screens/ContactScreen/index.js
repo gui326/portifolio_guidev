@@ -15,7 +15,7 @@ export default function ContactScreen(){
                     Contato
                 </Title>
                 <Description>
-                    entre em <span>contato</span> para gente trocar uma ideia
+                    entre em <span>contato</span> para a gente trocar uma ideia
                 </Description>
             </Container>
 

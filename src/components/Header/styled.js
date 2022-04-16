@@ -53,7 +53,7 @@ export const Item = styled.li`
 export const MenuMobile = styled.div` 
     display: none;
     align-self: center;
-    padding-top: 0.8em;
+
     svg{
         font-size: 30px;
     }

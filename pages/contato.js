@@ -1,15 +1,15 @@
 import Head from 'next/head'
-import ProjectScreen from '../src/screens/ProjectScreen'
+import ContactScreen from '../src/screens/ContactScreen'
 
 export default function Project() {
   return (
     <>
       <Head>
         <title>GuiBatista | Projetos</title>
-        <meta name="description" content="GuiDev - Projetos" />
+        <meta name="description" content="GuiDev - Contato" />
       </Head>
 
-      <ProjectScreen />
+      <ContactScreen />
 
     </>
   )

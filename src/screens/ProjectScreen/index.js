@@ -5,7 +5,7 @@ import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 import GitHubIcon from '@mui/icons-material/GitHub';
 
-import { Title, Card, StackArea, Badge, LinkArea } from "./styled";
+import { Title, Card, StackArea, Badge, LinkArea, Description } from "./styled";
 
 
 export default function ProjectScreen(){
@@ -17,6 +17,9 @@ export default function ProjectScreen(){
                 <Title>
                     Projetos
                 </Title>
+                <Description>
+                    da faculdade e <span>pessoais</span> :D
+                </Description>
 
                 <Stack direction={{ md: 'row', xs: 'column' }} spacing={2}>
                     <Card>

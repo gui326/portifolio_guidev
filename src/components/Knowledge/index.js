@@ -1,13 +1,14 @@
-import { Container, Grid, Stack } from "@mui/material";
+import { Container } from "@mui/material";
 import Image from "next/image";
 
-import { Title, Card, KnowArea } from "./styled";
+import { Title, Card, KnowArea, Description, SubTitle } from "./styled";
 
 
 export default function Knowledge(){
     return(
         <Container>
             <Title>Conhecimentos</Title>
+            <Description>Possuo experiência <span>profissional</span> nas seguintes tecnologias/linguagens</Description>
 
             <KnowArea>
                 <Card>
@@ -18,7 +19,7 @@ export default function Knowledge(){
                 </Card>
 
                 <Card>
-                    <Image src="/images/logoNext.png" alt="Logo Next.js" width="120" height="80"/>
+                    <Image src="/images/logoNext.png" alt="Logo Next.js" width="110" height="80"/>
 
                     <p className="text--show">Next.js</p>
                     <p className="info--show">2 meses</p>
@@ -74,7 +75,7 @@ export default function Knowledge(){
                 </Card>
             </KnowArea>
 
-            <Title style={{ marginTop: 120 }}>Noções Básicas / Conhecimentos Adicionais</Title>
+            <SubTitle style={{ marginTop: 120 }}>Noções Básicas / Conhecimentos Adicionais</SubTitle>
 
             <KnowArea spacing={2} direction="row">
                 <Card>

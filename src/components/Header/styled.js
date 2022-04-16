@@ -11,13 +11,8 @@ export const Area = styled.header`
 `;
 
 export const LogoArea = styled.div` 
-    h3{
-        font-family: 'PT Serif';
-        font-weight: 700;
-        font-size: 32px;
-        color: #000000;
-        letter-spacing: -2px;
-    }
+    display: flex;
+    align-items: center;
 
     @media (max-width: 468px){
         h3{
@@ -44,11 +39,11 @@ export const Menu = styled.ul`
 
 export const Item = styled.li` 
     padding: 1em;
-    font-style: normal;
-    ${props => props.ativo && "text-decoration: underline; text-decoration-color: var(--main-color);text-decoration-thickness: 2px;text-underline-offset: 3px;"}
-    font-weight: 400;
-    font-size: 18px;
+    font-weight: 600;
+    font-size: 15px;
     color: #000000;
+    ${props => props.ativo && "background: -webkit-linear-gradient(left,#670b62 10%, #a51d62 30%, #ce213d 80%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"}
+    
 
     :hover{
         opacity: .6;

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Container } from "@mui/material";
 import Link from "next/link";
+import Image from "next/image";
 
 import MenuIcon from '@mui/icons-material/Menu';
 
@@ -15,11 +16,11 @@ export default function Header(){
 
     return(
         <Area>
-            <Container style={{ display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap' }}>
+            <Container style={{ padding: '1em 1.4em', display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap' }}>
                 <LogoArea>
                     <Link href="/" passHref>
                         <a>
-                            <h3>GuiDev</h3>
+                            <Image src="/images/logo.png" alt="Logo Gui326" width="45" height="45"/>
                         </a>
                     </Link>
                 </LogoArea>
@@ -35,7 +36,7 @@ export default function Header(){
                                 <Item ativo={router.pathname === "/projetos"}>Projetos</Item>
                             </a>
                         </Link>
-                        <Link href="/contatos" passHref>
+                        <Link href="/contato" passHref>
                             <a>
                                 <Item ativo={router.pathname === "/contato"}>Contato</Item>
                             </a>

@@ -5,8 +5,8 @@ export default function Project() {
   return (
     <>
       <Head>
-        <title>GuiBatista | Projetos</title>
-        <meta name="description" content="GuiDev - Projetos" />
+        <title>Projetos | GuiBatista</title>
+        <meta name="description" content="GuiBatista - Projetos" />
       </Head>
 
       <ProjectScreen />

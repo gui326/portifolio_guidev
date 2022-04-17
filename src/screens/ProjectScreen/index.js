@@ -29,8 +29,8 @@ export default function ProjectScreen(){
                         </p>
 
                         <StackArea>
-                            <Image src="/images/logoNext.png" alt="Logo Next" width="43" height="30"/>
-                            <Image src="/images/logoMui.png" alt="Logo Mui" width="30" height="30"/>
+                            <Image title="Next.js" src="/images/logoNext.png" alt="Logo Next" width="43" height="30"/>
+                            <Image title="Material UI" src="/images/logoMui.png" alt="Logo Mui" width="30" height="30"/>
                         </StackArea>
 
                         <LinkArea>
@@ -51,11 +51,11 @@ export default function ProjectScreen(){
                         </p>
 
                         <StackArea>
-                            <Image src="/images/logoLaravel.png" alt="Logo Laravel" width="30" height="30"/>
-                            <Image src="/images/logoBootstrap.png" alt="Logo Bootstrap" width="40" height="30"/>
-                            <Image src="/images/logoHtml.png" alt="Logo HTML5" width="30" height="30"/>
-                            <Image src="/images/logoCss.png" alt="Logo CSS3" width="30" height="30"/>
-                            <Image src="/images/logoJavascript.png" alt="Logo JavaScript" width="30" height="30"/>
+                            <Image title="Laravel" src="/images/logoLaravel.png" alt="Logo Laravel" width="25" height="20"/>
+                            <Image title="Bootstrap" src="/images/logoBootstrap.png" alt="Logo Bootstrap" width="30" height="25"/>
+                            <Image title="HTML5" src="/images/logoHtml.png" alt="Logo HTML5" width="25" height="25"/>
+                            <Image title="CSS3" src="/images/logoCss.png" alt="Logo CSS3" width="25" height="25"/>
+                            <Image title="Javascript" src="/images/logoJavascript.png" alt="Logo JavaScript" width="25" height="25"/>
                         </StackArea>
 
                         <LinkArea>
@@ -83,8 +83,8 @@ export default function ProjectScreen(){
                         </p>
 
                         <StackArea>
-                            <Image src="/images/logoReact.webp" alt="Logo React" width="30" height="30"/>
-                            <Image src="/images/logoMui.png" alt="Logo Mui" width="30" height="30"/>
+                            <Image title="React" src="/images/logoReact.webp" alt="Logo React" width="30" height="20"/>
+                            <Image title="Material UI" src="/images/logoMui.png" alt="Logo Mui" width="30" height="30"/>
                         </StackArea>
 
                         <LinkArea>
@@ -107,9 +107,9 @@ export default function ProjectScreen(){
                             Plataforma Web feita com React e o back-end está sendo utilizado o Firebase
                         </p>
                         <StackArea>
-                            <Image src="/images/logoReact.webp" alt="Logo React" width="30" height="30"/>
-                            <Image src="/images/logoMui.png" alt="Logo Mui" width="30" height="30"/>
-                            <Image src="/images/logoFirebase.png" alt="Logo Firebase" width="30" height="30"/>
+                            <Image title="React" src="/images/logoReact.webp" alt="Logo React" width="30" height="20"/>
+                            <Image title="Material UI" src="/images/logoMui.png" alt="Logo Mui" width="30" height="30"/>
+                            <Image title="Firebase" src="/images/logoFirebase.png" alt="Logo Firebase" width="30" height="30"/>
                         </StackArea>
 
                         <LinkArea>
@@ -133,8 +133,8 @@ export default function ProjectScreen(){
                         </p>
 
                         <StackArea>
-                            <Image src="/images/logoNext.png" alt="Logo Next" width="43" height="30"/>
-                            <Image src="/images/logoMui.png" alt="Logo Mui" width="30" height="30"/>
+                            <Image title="Next.js" src="/images/logoNext.png" alt="Logo Next" width="43" height="30"/>
+                            <Image title="Material UI" src="/images/logoMui.png" alt="Logo Mui" width="30" height="30"/>
                         </StackArea>
 
                         <LinkArea>

@@ -129,7 +129,7 @@ export default function ProjectScreen(){
                     <Card>
                         <h3>Meu Serviço <Badge>Em produção</Badge></h3>
                         <p>
-                            Um projeto mobile e web, com um intuito de ser um "marketplace" para serviços. Contará com um aplicativo para o cliente poder procurar o serviço que precisa naquele momento.
+                            Um projeto mobile e web, com um intuito de ser um &rdquo;marketplace&rdquo; para serviços. Contará com um aplicativo para o cliente poder procurar o serviço que precisa naquele momento.
                         </p>
 
                         <StackArea>

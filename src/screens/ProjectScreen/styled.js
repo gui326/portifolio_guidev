@@ -18,7 +18,6 @@ export const Description = styled.p`
     font-size: 15px;
     color: #0b0b0b;
     text-align: center;
-    
 
     span{
         background: -webkit-linear-gradient(left,#670b62 10%, #a51d62 30%, #ce213d 80%);

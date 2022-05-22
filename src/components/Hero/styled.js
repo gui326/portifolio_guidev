@@ -5,11 +5,7 @@ export const Info = styled.p`
     font-weight: 500;
     font-size: 14px;
     color: #000000;
-    padding-bottom: 1em;
-
-    @media (max-width: 468px){
-        padding-bottom: .5em;
-    }
+    padding-bottom: .5em;
 `;
 
 export const Name = styled.h2` 
@@ -31,7 +27,7 @@ export const Name = styled.h2`
 export const Description = styled.p` 
     margin: 0;
     font-family: 'PT Serif';
-    padding-top: 1em;
+    padding-top: .5em;
     font-weight: 500;
     font-size: 20px;
     line-height: 38px;
@@ -46,7 +42,6 @@ export const Description = styled.p`
 
     @media (max-width: 468px){
         font-size: 18px;
-        padding-top: .5em;
     }
 `;
 

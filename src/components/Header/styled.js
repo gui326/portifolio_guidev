@@ -53,9 +53,17 @@ export const Item = styled.li`
 export const MenuMobile = styled.div` 
     display: none;
     align-self: center;
+    border-radius: 50px;
+
+    :active, :focus, :hover{
+        background: #dfdfdf;
+        outline: 5px solid #dfdfdf;
+    }
 
     svg{
+        align-self: center;
         font-size: 30px;
+        display: flex;
     }
 
     @media (max-width: 468px){

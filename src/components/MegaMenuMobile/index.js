@@ -29,7 +29,7 @@ export default function MegaMenuMobile(props) {
             TransitionComponent={Transition}
         >
                 <Area>
-                    <div style={{ padding: '.9em', display: 'flex', flexDirection: 'row', justifyContent: 'flex-end' }}>
+                    <div style={{ padding: '1.2em', display: 'flex', flexDirection: 'row', justifyContent: 'flex-end' }}>
                         <IconButton
                         edge="start"
                         color="inherit"

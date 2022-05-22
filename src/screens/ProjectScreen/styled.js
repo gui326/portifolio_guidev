@@ -40,9 +40,8 @@ export const Card = styled.div`
         font-style: normal;
         font-weight: 700;
         font-size: 28px;
-        line-height: 42px;
         color: #000000;
-        padding: .2em 0;
+        padding-bottom: .2em;
     }
 
     p{
@@ -89,8 +88,7 @@ export const Card = styled.div`
 export const StackArea = styled.div` 
     gap: 15px;
     display: flex;
-    padding-top: 1.2em;
-    padding-bottom: 2em;
+    padding: 1.2em 0;
 
     img{
         filter: grayscale(.9);

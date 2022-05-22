@@ -6,6 +6,10 @@ export const Info = styled.p`
     font-size: 14px;
     color: #000000;
     padding-bottom: 1em;
+
+    @media (max-width: 468px){
+        padding-bottom: .5em;
+    }
 `;
 
 export const Name = styled.h2` 
@@ -38,6 +42,11 @@ export const Description = styled.p`
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         font-weight: 700;
+    }
+
+    @media (max-width: 468px){
+        font-size: 18px;
+        padding-top: .5em;
     }
 `;
 

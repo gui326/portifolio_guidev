@@ -83,7 +83,6 @@ export const Card = styled.div`
     }
 
     @media (max-width: 468px){
-        margin: .8em;
         min-width: 50%;
 
         .text--show{

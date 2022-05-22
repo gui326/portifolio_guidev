@@ -40,7 +40,7 @@ export const Menu = styled.ul`
 export const Item = styled.li` 
     padding: 1em;
     font-weight: 600;
-    font-size: 15px;
+    font-size: 16px;
     color: #000000;
     ${props => props.ativo && "background: -webkit-linear-gradient(left,#670b62 10%, #a51d62 30%, #ce213d 80%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"}
     

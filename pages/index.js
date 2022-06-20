@@ -18,7 +18,7 @@ export default function Home() {
         </Script>
 
         <Head>
-          <title>GuiBatista | Portifólio de um Desenvolvedor</title>
+          <title>GuiBatista | Portifólio de um Desenvolvedor Full-Stack</title>
           <meta name="description" content="Desenvolvedor front-end, com conhecimento em HTML5, CSS3, JavaScript, React, React Native e Next.js. Apaixonado pelo mundo da programação." />
         </Head>
 

@@ -1,13 +1,5 @@
 import styled from "styled-components";
 
-export const Info = styled.p` 
-    margin: 0;
-    font-weight: 500;
-    font-size: 14px;
-    color: #000000;
-    padding-bottom: .5em;
-`;
-
 export const Name = styled.h2` 
     margin: 0;
     font-family: 'PT Serif';
@@ -26,11 +18,11 @@ export const Name = styled.h2`
 
 export const Description = styled.p` 
     margin: 0;
-    font-family: 'PT Serif';
+    font-family: 'Inter', sans-serif;
     padding-top: .5em;
     font-weight: 500;
-    font-size: 20px;
-    line-height: 38px;
+    font-size: 16px;
+    line-height: 32px;
     color: #444444;
 
     span{

@@ -38,22 +38,23 @@ export const Card = styled.div`
         font-family: 'PT Serif';
         font-style: normal;
         font-weight: 700;
-        font-size: 28px;
+        font-size: 24px;
         color: #000000;
-        padding-bottom: .2em;
+        padding-bottom: 0.5em;
     }
 
     p{
         margin: 0;
-        font-family: 'Inter';
+        font-family: 'Inter', sans-serif;
         font-style: normal;
         font-weight: 400;
-        font-size: 15px;
+        font-size: 14px;
         line-height: 1.7em;
         color: #2E2B2B;
     }
 
     a{
+        font-size: 14px;
         text-decoration: underline;
         align-self: center;
         text-underline-offset: 1px;
@@ -109,6 +110,7 @@ export const Badge = styled.span`
     color: white;
     position: relative;
     bottom: 6px;
+    font-family: "Inter", sans-serif;
 `;
 
 export const LinkArea = styled.div` 

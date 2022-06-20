@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Title = styled.h2` 
     font-family: 'PT Serif';
     font-weight: 700;
-    font-size: 36px;
+    font-size: 28px;
     color: #000000;
     text-align: center;
     margin: 0;
@@ -15,7 +15,7 @@ export const Description = styled.p`
     margin-top: 0;
     font-family: 'Inter';
     font-weight: 500;
-    font-size: 15px;
+    font-size: 14px;
     color: #0b0b0b;
     text-align: center;
     line-height: 1.7em;
@@ -28,9 +28,9 @@ export const Description = styled.p`
 `;
 
 export const SubTitle = styled.h5` 
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 14px;
     color: #000000;
     text-align: center;
 
@@ -45,7 +45,6 @@ export const Card = styled.div`
     background: white;
     padding: 2em 0;
     border-radius: 6px;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     text-align: center;
     border-radius: 12px;
     transition: all .3s ease-out;
@@ -59,10 +58,12 @@ export const Card = styled.div`
     }
 
     .text--show{
+        font-size: 14px;
         font-weight: 600;
     }
 
     .info--show{
+        font-size: 14px;
         display: none;
     }
     

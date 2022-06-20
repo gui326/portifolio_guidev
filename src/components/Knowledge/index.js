@@ -1,4 +1,4 @@
-import { Container } from "@mui/material";
+import { Container, Grow } from "@mui/material";
 import Image from "next/image";
 
 import { Title, Card, KnowArea, Description, SubTitle } from "./styled";
@@ -11,19 +11,26 @@ export default function Knowledge(){
             <Description>Possuo experiência <span>profissional</span> nas seguintes tecnologias/linguagens</Description>
 
             <KnowArea>
-                <Card>
-                    <Image src="/images/logoReact.webp" alt="Logo React" width="60" height="60"/>
+                <Grow in={true}
+                >
+                    <Card>
+                        <Image src="/images/logoReact.webp" alt="Logo React" width="60" height="60"/>
 
-                    <p className="text--show">React</p>
-                    <p className="info--show">6 meses</p>
-                </Card>
+                        <p className="text--show">React</p>
+                        <p className="info--show">8 meses</p>
+                    </Card>
+                </Grow>
 
-                <Card>
-                    <Image src="/images/logoNext.png" alt="Logo Next.js" width="90" height="60"/>
+                <Grow in={true}
+                {...(true ? { timeout: 200 } : {})}
+                >
+                    <Card>
+                        <Image src="/images/logoNext.png" alt="Logo Next.js" width="90" height="60"/>
 
-                    <p className="text--show">Next.js</p>
-                    <p className="info--show">2 meses</p>
-                </Card>
+                        <p className="text--show">Next.js</p>
+                        <p className="info--show">3 meses</p>
+                    </Card>
+                </Grow>
 
                 <Card>
                     <Image src="/images/logoHtml.png" alt="Logo HTML5" width="50" height="60"/>
@@ -43,7 +50,7 @@ export default function Knowledge(){
                     <Image src="/images/logoJavascript.png" alt="Logo JavaScript" width="60" height="60"/>
 
                     <p className="text--show">JavaScript</p>
-                    <p className="info--show">1 ano</p>
+                    <p className="info--show">1,5 ano</p>
                 </Card>
 
                 <Card>
@@ -51,6 +58,13 @@ export default function Knowledge(){
 
                     <p className="text--show">PHP</p>
                     <p className="info--show">1 ano</p>
+                </Card>
+
+                <Card>
+                    <Image src="/images/nodejs.png" alt="Logo Node.js" width="60" height="60"/>
+
+                    <p className="text--show">Node.js</p>
+                    <p className="info--show">2 meses</p>
                 </Card>
 
                 <Card>
@@ -64,7 +78,7 @@ export default function Knowledge(){
                     <Image src="/images/logoMui.png" alt="Logo Material UI" width="70" height="60"/>
 
                     <p className="text--show">Material UI</p>
-                    <p className="info--show">3 meses</p>
+                    <p className="info--show">6 meses</p>
                 </Card>
 
                 <Card>
@@ -96,14 +110,14 @@ export default function Knowledge(){
                     <Image src="/images/logoFigma.svg" alt="Logo Figma" width="50" height="60"/>
 
                     <p className="text--show">Figma</p>
-                    <p className="info--show">6 meses</p>
+                    <p className="info--show">8 meses</p>
                 </Card>
 
                 <Card>
                     <Image src="/images/logoGit.png" alt="Logo Git" width="60" height="60"/>
 
                     <p className="text--show">Git</p>
-                    <p className="info--show">6 meses</p>
+                    <p className="info--show">8 meses</p>
                 </Card>
 
                 <Card>
@@ -131,7 +145,7 @@ export default function Knowledge(){
                     <Image src="/images/logoMysql.png" alt="Logo Mysql" width="70" height="60"/>
 
                     <p className="text--show">MySql</p>
-                    <p className="info--show">6 meses</p>
+                    <p className="info--show">1,5 ano</p>
                 </Card>
 
                 <Card>

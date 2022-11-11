@@ -12,10 +12,10 @@ export default function Hero(){
             >
                 <Grid container spacing={6} overflow="hidden" position="relative">
                     <Grid item md={6} xs={10} alignSelf="center">
-                        <Description>Olá, eu sou o</Description>
+                        <Description>Olá, bem-vindo. Eu sou o</Description>
                         <Name>Guilherme Batista</Name>
                         <Description>
-                            e estudo programação a quase 4 anos, estou formando em ADS e atuando profissionalmente a 1 ano e meio como
+                            e estudo programação a 4 anos, formando em ADS e atuando profissionalmente a quase 2 anos como
                             <span> Software Developer Full-Stack</span>, utilizando HTML5, CSS3, JavaScript, PHP, Node.js, MYSQL, React, React Native, Next.js e entre outras tecnologias. 
                         </Description>
                     </Grid>

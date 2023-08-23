@@ -1,0 +1,483 @@
+.navBar__link {
+  list-style: none;
+
+  margin: 0 14px;
+}
+
+.navBar__link a {
+  color: var(--aux-color);
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.navBar__linkActive a {
+  color: var(--primary-color);
+}
+
+.navBar__link a:hover {
+  opacity: 0.8;
+}
+
+.menu {
+  display: flex;
+}
+
+.navBar {
+  display: flex;
+  gap: 40px;
+}
+
+.navBar__contact {
+  list-style: none;
+
+  margin: 0 4px;
+}
+
+.navBar__contactDetail {
+  list-style: none;
+  color: lightgrey;
+  margin: 0 4px;
+}
+
+.navBar__contact a {
+  color: var(--primary-color);
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.navBar__contact a:hover {
+  color: var(--aux-color);
+}
+
+.badgeHero {
+  border: 1px solid #262c412e;
+  background-color: #f6f4f4;
+  padding: 4px 10px;
+  border-radius: 100px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  opacity: 0.8;
+}
+
+.badgeHero p {
+  color: var(--aux-color);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.badgeHero div {
+  width: 6px;
+  height: 6px;
+  aspect-ratio: 1/1;
+  background-color: var(--aux-color);
+  border-radius: 100px;
+}
+
+.hero__title {
+  color: var(--aux-color);
+  text-align: center;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: -0.64px;
+
+  margin-top: 40px;
+  margin-bottom: 24px;
+}
+
+.hero__title span {
+  background: var(--gradient-color);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero__description {
+  color: var(--aux-color);
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 160% */
+  max-width: 80%;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sectionJourney {
+  background: #181717;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.sectionJourney__title {
+  color: #fff;
+  text-align: center;
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+  margin-top: 100px;
+  margin-bottom: 16px;
+}
+
+.sectionJourney__title span {
+  background: var(--gradient-color);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.sectionJourney__description {
+  color: #c1c1c1;
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  margin-bottom: 40px;
+}
+
+.sectionJourney__card {
+  padding: 24px;
+  border-radius: 16px;
+  border: 1px solid #a369ff;
+  background: #242424;
+  box-shadow: 6px 6px 40px 0px rgba(255, 255, 255, 0.1);
+}
+
+.sectionJourney__card h3 {
+  color: #fff;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+
+  margin-bottom: 24px;
+}
+
+.sectionJourney__cardDisabled {
+  opacity: 0.4;
+  border: 1px solid #636363;
+  box-shadow: none;
+}
+
+.sectionJourney__card p {
+  color: #c1c1c1;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.sectionJourney__card small {
+  color: #a369ff;
+  font-weight: 500;
+  display: block;
+
+  margin-bottom: 4px;
+}
+
+.sectionJourney__card p span {
+  color: #fff;
+  font-weight: 500;
+}
+
+.sectionJourney__cardSchool {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sectionJourney__cardSchool h3 {
+  color: #fff;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+
+.sectionJourney__cardSchool span {
+  display: block;
+  background: var(--gradient-color);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+  margin-bottom: 8px;
+}
+
+.sectionJourney__cardSchool p {
+  color: #c1c1c1;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.sectionJourney__cardSchool p b {
+  color: #fff;
+  font-weight: 500;
+}
+
+.sectionKnowledge {
+  display: flex;
+  flex-direction: column;
+  background: #1f1f1f;
+
+  border-top: 1px solid #464646;
+}
+
+.sectionKnowledge__title {
+  color: #fff;
+  text-align: center;
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+  margin-top: 100px;
+  margin-bottom: 16px;
+}
+
+.sectionKnowledge__title span {
+  background: var(--gradient-color);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.sectionKnowledge__description {
+  color: #c1c1c1;
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  margin-bottom: 40px;
+}
+
+.sectionKnowledge__description b {
+  color: #fff;
+  font-weight: 500;
+}
+
+.sectionKnowledge__card {
+  background: #2b2929;
+  flex: 1;
+  padding: 24px;
+  height: auto;
+}
+
+.sectionKnowledge__cardFirst {
+  border-left: 1px solid #878181;
+  border-top: 1px solid #878181;
+  border-bottom: 1px solid #878181;
+  border-radius: 16px 0px 0px 16px;
+}
+
+.sectionKnowledge__cardMid {
+  border: 1px solid #878181;
+}
+
+.sectionKnowledge__cardLast {
+  border-right: 1px solid #878181;
+  border-top: 1px solid #878181;
+  border-bottom: 1px solid #878181;
+  border-radius: 0px 16px 16px 0px;
+}
+
+.sectionKnowledge__card h3 {
+  color: #fff;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  margin-top: 40px;
+  margin-bottom: 8px;
+}
+
+.sectionKnowledge__card p {
+  color: #888;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.sectionKnowledge__cardSimple {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.sectionKnowledge__cardSimple h4 {
+  color: #fff;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+
+  margin-top: 24px;
+}
+
+.sectionProject {
+  display: flex;
+  flex-direction: column;
+  background: #101010;
+
+  border-top: 1px solid #464646;
+}
+
+.sectionProject__title {
+  color: #fff;
+  text-align: center;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+  margin-top: 100px;
+  margin-bottom: 40px;
+}
+
+.sectionProject__title span {
+  background: var(--gradient-color);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer div {
+  margin-top: 24px;
+  margin-bottom: 24px;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer p {
+  color: var(--aux-color);
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+@media (max-width: 480px) {
+  .navBar {
+    display: none;
+  }
+
+  .hero__title {
+    font-size: 38px;
+  }
+
+  .hero__description {
+    font-size: 15px;
+    max-width: 95%;
+    line-height: 140%;
+  }
+
+  .sectionJourney__title {
+    font-size: 38px;
+
+    margin-top: 80px;
+  }
+
+  .badgeHero p {
+    font-size: 8px;
+  }
+
+  .sectionJourney__description {
+    font-size: 14px;
+  }
+
+  .sectionKnowledge__title {
+    font-size: 38px;
+
+    margin-top: 80px;
+  }
+
+  .sectionKnowledge__description {
+    font-size: 14px;
+  }
+
+  .sectionKnowledge__cardFirst {
+    border-radius: 16px 16px 0 0;
+
+    border-top: 1px solid #878181;
+    border-left: 1px solid #878181;
+    border-right: 1px solid #878181;
+    border-bottom: none;
+  }
+
+  .sectionKnowledge__cardLast {
+    border-radius: 0 0 16px 16px;
+
+    border-top: none;
+    border-bottom: 1px solid #878181;
+    border-left: 1px solid #878181;
+    border-right: 1px solid #878181;
+  }
+
+  .sectionKnowledge__card img {
+    width: auto;
+    height: 32px;
+  }
+
+  .sectionKnowledge__card h3 {
+    font-size: 18px;
+
+    margin-top: 24px;
+  }
+
+  .sectionKnowledge__card p {
+    font-size: 14px;
+  }
+
+  .sectionKnowledge__cardSimple h3 {
+    font-size: 14px;
+  }
+
+  .sectionProject__title {
+    font-size: 38px;
+
+    margin-top: 80px;
+  }
+}

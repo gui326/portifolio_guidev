@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "GuiBatista | Portifólio de um Desenvolvedor Full-Stack",
   description:
-    "Desenvolvedor front-end, com conhecimento em HTML5, CSS3, JavaScript, React, React Native e Next.js. Apaixonado pelo mundo da programação.",
+    "Desenvolvedor full-stack, com conhecimento em HTML5, CSS3, JavaScript, Node.js, React, React Native e Next.js. Apaixonado pelo mundo da programação.",
 };
 
 export default function RootLayout({

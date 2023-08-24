@@ -33,11 +33,16 @@ export default function Home() {
               display: "flex",
               alignItems: "center",
               justifyContent: "space-between",
-              marginTop: "24px",
+              marginTop: { md: "24px", xs: "16px" },
+              ".header__logo": {
+                width: { md: "50px", xs: "46px" },
+                height: { md: "50px", xs: "46px" },
+              },
             }}
           >
             <Link href="/">
               <Image
+                className="header__logo"
                 src="/assets/images/logo_guidev.svg"
                 alt="Logo GuiDev"
                 width="50"
@@ -88,7 +93,7 @@ export default function Home() {
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
-                gap: "8px",
+                gap: { md: "8px", xs: "4px" },
               }}
             >
               <div className={styles.badgeHero}>
@@ -115,9 +120,9 @@ export default function Home() {
             </h1>
 
             <p className={styles.hero__description}>
-              Tenho 4 anos de experiência em programação, sou formado em Análise
-              e Desenvolvimento de Sistemas (ADS) e atuo como{" "}
-              <b>Desenvolvedor Full-Stack</b> há mais de 2 anos. Durante minha
+              Tenho quase cinco anos de experiência em programação, sou formado
+              em Análise e Desenvolvimento de Sistemas (ADS) e atuo como{" "}
+              <b>Desenvolvedor Full-Stack</b> há quase três anos. Durante minha
               trajetória profissional, tenho trabalhado com diversas
               tecnologias, incluindo HTML5, CSS3, JavaScript, PHP, Node.js,
               MySQL, React, React Native e Next.js, entre outras.
@@ -125,12 +130,12 @@ export default function Home() {
 
             <Box
               sx={{
-                mt: "56px",
+                mt: { md: "56px", xs: "40px" },
                 mb: { md: "100px", xs: "80px" },
                 display: "flex",
                 alignItems: "center",
-                flexDirection: { md: "row", xs: "column" },
-                gap: "16px",
+                flexDirection: "row",
+                gap: { md: "16px", xs: "8px" },
                 justifyContent: "center",
               }}
             >
@@ -369,7 +374,7 @@ export default function Home() {
               </div>
             </Box>
 
-            <p className={styles.sectionKnowledge__description}>
+            <p className={styles.sectionKnowledge__info}>
               E entre outras <b>linguagens</b> <br /> e <b>framework</b> que já
               passei
             </p>
@@ -491,17 +496,17 @@ export default function Home() {
         <section id="projetos" className={styles.sectionProject}>
           <Container>
             <h2 className={styles.sectionProject__title}>
-              Projetos realizados <span>profissional e educional.</span>
+              Projetos realizados <span>profissional e educacional.</span>
             </h2>
           </Container>
 
           <Box
             sx={{
-              mb: "100px",
+              mb: { md: "100px", xs: "80px" },
               height: "500px",
               width: "100%",
               display: "flex",
-              gap: "24px",
+              gap: { md: "24px", xs: "16px" },
               position: "relative",
             }}
           >
@@ -509,8 +514,8 @@ export default function Home() {
               sx={{
                 display: "flex",
                 flexDirection: "column",
-                gap: "24px",
-                width: "35%",
+                gap: { md: "24px", xs: "16px" },
+                width: { md: "35%", xs: "15%" },
               }}
             >
               <Box
@@ -537,7 +542,8 @@ export default function Home() {
                 borderRadius: "8px 8px",
                 backgroundColor: "grey",
                 height: "95%",
-                width: "25%",
+                width: { md: "25%", xs: 0 },
+                display: { md: "flex", xs: "none" },
               }}
             />
 
@@ -545,8 +551,8 @@ export default function Home() {
               sx={{
                 display: "flex",
                 flexDirection: "column",
-                gap: "24px",
-                width: "35%",
+                gap: { md: "24px", xs: "16px" },
+                width: { md: "35%", xs: "80%" },
               }}
             >
               <Box
@@ -635,6 +641,7 @@ export default function Home() {
         <footer className={styles.footer}>
           <div>
             <Image
+              className={styles.footer__logo}
               src="/assets/images/logo_guidev.svg"
               alt="Logo GuiDev"
               width="40"

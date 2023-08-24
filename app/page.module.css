@@ -455,6 +455,18 @@
     line-height: 24px;
   }
 
+  .sectionJourney__cardSchool h3 {
+    font-size: 22px;
+  }
+
+  .sectionJourney__cardSchool p {
+    font-size: 14px;
+  }
+
+  .sectionJourney__cardSchool span {
+    font-size: 14px;
+  }
+
   .sectionKnowledge__title {
     font-size: 28px;
 

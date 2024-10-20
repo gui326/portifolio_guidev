@@ -416,7 +416,8 @@
   }
 
   .hero__title {
-    font-size: 38px;
+    font-size: 32px;
+    text-align: start;
 
     margin-bottom: 16px;
   }
@@ -424,7 +425,8 @@
   .hero__description {
     font-size: 15px;
     max-width: 100%;
-    line-height: 140%;
+    line-height: 26px;
+    text-align: start;
   }
 
   .sectionJourney__title {

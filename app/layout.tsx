@@ -1,5 +1,6 @@
 import "./globals.css";
 import { Inter } from "next/font/google";
+import { GoogleTagManager } from "@next/third-parties/google";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,17 +17,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-BR">
-      <body className={inter.className}>
-        <noscript>
-          <iframe
-            src={`https://www.googletagmanager.com/gtag/js?id=G-T7BGK77Z39`}
-            height="0"
-            width="0"
-            style={{ display: "none", visibility: "hidden" }}
-          />
-        </noscript>
-        {children}
-      </body>
+      <GoogleTagManager gtmId="GTM-WG2262PB" />
+
+      <body className={inter.className}>{children}</body>
     </html>
   );
 }

@@ -2,6 +2,10 @@
   "name": "portifolio_guidev",
   "version": "0.1.0",
   "private": true,
+  "author": {
+    "name": "gui326",
+    "email": "guilherme.326@hotmail.com"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -12,6 +16,7 @@
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
     "@mui/material": "^5.13.4",
+    "@next/third-parties": "^14.2.15",
     "@types/node": "20.3.0",
     "@types/react": "18.2.11",
     "@types/react-dom": "18.2.4",

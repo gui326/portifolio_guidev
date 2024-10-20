@@ -7,25 +7,10 @@ import Link from "next/link";
 import styles from "./page.module.css";
 import Button from "@/src/components/Button";
 import ButtonSecondary from "../src/components/ButtonSecondary";
-import Script from "next/script";
 
 export default function Home() {
   return (
     <>
-      <Script
-        id="gtm-script"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{
-          __html: `
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-        
-          gtag('config', 'G-T7BGK77Z39');
-`,
-        }}
-      />
-
       <main>
         <header>
           <Container
@@ -64,19 +49,22 @@ export default function Home() {
 
               <ul className={styles.menu}>
                 <li className={styles.navBar__contact}>
-                  <a href="/" target="_blank">
+                  <a href="mailto:guilherme.326@hotmail.com" target="_blank">
                     EMAIL
                   </a>
                 </li>
                 <li className={styles.navBar__contactDetail}>/</li>
                 <li className={styles.navBar__contact}>
-                  <a href="/" target="_blank">
+                  <a
+                    href="https://www.linkedin.com/in/guilherme-batista-b38400197/"
+                    target="_blank"
+                  >
                     LINKEDIN
                   </a>
                 </li>
                 <li className={styles.navBar__contactDetail}>/</li>
                 <li className={styles.navBar__contact}>
-                  <a href="/" target="_blank">
+                  <a href="https://github.com/gui326" target="_blank">
                     GITHUB
                   </a>
                 </li>
@@ -135,13 +123,25 @@ export default function Home() {
                 display: "flex",
                 alignItems: "center",
                 flexDirection: "row",
-                gap: { md: "16px", xs: "8px" },
-                justifyContent: "center",
+                gap: { md: "16px", xs: "12px" },
+                justifyContent: { md: "center", xs: "start" },
               }}
             >
-              <Button>Entre em contato</Button>
+              <Link
+                href="mailto:guilherme.326@hotmail.com"
+                style={{
+                  display: "flex",
+                }}
+              >
+                <Button>Entre em contato</Button>
+              </Link>
 
-              <Link href="/#projetos">
+              <Link
+                href="/#projetos"
+                style={{
+                  display: "flex",
+                }}
+              >
                 <ButtonSecondary>Visualizar projetos</ButtonSecondary>
               </Link>
             </Box>
